@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url> <loc>https://docs.cloudshotspot.com/zh/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/api/create_account.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/api/update_account.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/api/delete_account.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/api/view_account.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/api/lists_account.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/api/generate_voucher.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/api/update_voucher.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/api/delete_voucher.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/api/view_voucher.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/api/lists_voucher.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/ubiquiti-network/wireless-setup.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/ubiquiti-network/Guest-portal.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/mikrotik-routeros/winbox-connect-to-router.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/mikrotik-routeros/basic-configure.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/mikrotik-routeros/hotspot-setup.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/mikrotik-routeros/hotspot-profile.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/zh/mikrotik-routeros/upload-hotspot-site.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+</urlset>
