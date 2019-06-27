@@ -118,6 +118,4 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             $(".js-toolbar-action").hide();
         }
     });
-    
-
 });
