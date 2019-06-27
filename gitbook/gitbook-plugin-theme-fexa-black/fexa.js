@@ -37,7 +37,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         $title.text(gitbook.state.config.title);
         var lang = gitbook.state.innerLanguage;
         var placeholder = "Enter a Keyword"
-        if(lang=="cn"){
+        if(lang=="zh"){
            placeholder = configs.pluginsConfig["theme-fexa"]["search-placeholder_cn"] ;
         }else if(lang=="en"){
            placeholder = configs.pluginsConfig["theme-fexa"]["search-placeholder_en"] ;
@@ -118,4 +118,6 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             $(".js-toolbar-action").hide();
         }
     });
+    
+
 });

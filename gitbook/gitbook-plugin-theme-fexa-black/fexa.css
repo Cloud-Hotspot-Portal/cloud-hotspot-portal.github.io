@@ -84,7 +84,7 @@ body {
   padding: .25rem!important;
   border-bottom: 1px solid rgb(222, 226, 230);
   margin: 0 auto;
-  height: 78px;
+  height: 77px;
   background-color:rgb(255, 255, 255);
 
 }
@@ -115,7 +115,7 @@ body {
   line-height: 22px;
   border: 1px solid #6d6c6c;
   margin-top: 18px;
-  margin-right: 10px;
+  margin-right: -20px;
 }
 
 .header-inner .search-icon {
@@ -125,7 +125,7 @@ body {
   background: url('./search.png');
   background-size: 26px 26px;
   background-repeat: no-repeat;
-  margin-top: 22px;
+/*  margin-top: 22px;*/
   margin-right: 10px;
   cursor: pointer;
 }
@@ -151,7 +151,7 @@ body {
   padding: .25rem!important;
   background-repeat: no-repeat;
   margin-left: 2.1rem;
-  margin-top: 0.22rem;
+  margin-top: 0.11rem;
 }
 
 .header-inner .logo img {
@@ -196,12 +196,11 @@ body {
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
-.header-nav .nav-border:hover{
-  background: #f34d4d;
-  border:0.5px solid #f34d4d;
-  color: #ffffff;
+/*.header-nav .nav-border:hover{
+  background: #25c401; 
+  color: white;
   cursor: pointer;
-}
+}*/
 
 @media (max-width: 768px) {
   /*.book-summary,
@@ -216,12 +215,13 @@ body {
   .book-anchor{
     display: none;    
   }
- .header-nav .nav-border {
+
+ /*.header-nav .nav-border {
     border: 0.5px solid #807e7e;
     border-radius: 2px;
     padding-left: 0px !important;
     padding-right: 0px !important; 
-  }
+  }*/
 
   .header-inner .search-icon {
       float: right;
