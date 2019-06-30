@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.4 Hotspot Server Profile · Cloud Hotspot</title>
+        <title>4.1 Create a site for ros-hotspot · Cloud Hotspot</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="Cloud Hotspot">
@@ -73,10 +73,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="upload-hotspot-site.html" />
+    <link rel="next" href="create-a-site-with-unifi-controller.html" />
     
-    
-    <link rel="prev" href="hotspot-setup.html" />
     
 
     </head>
@@ -358,9 +356,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="winbox-connect-to-router.html">
+        <li class="chapter " data-level="1.4.1" data-path="../mikrotik-routeros/winbox-connect-to-router.html">
             
-                <a href="winbox-connect-to-router.html">
+                <a href="../mikrotik-routeros/winbox-connect-to-router.html">
             
                     
                     3.1 Connect to RouterOS
@@ -371,9 +369,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="basic-configure.html">
+        <li class="chapter " data-level="1.4.2" data-path="../mikrotik-routeros/basic-configure.html">
             
-                <a href="basic-configure.html">
+                <a href="../mikrotik-routeros/basic-configure.html">
             
                     
                     3.2 Connect to Internet
@@ -384,9 +382,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="hotspot-setup.html">
+        <li class="chapter " data-level="1.4.3" data-path="../mikrotik-routeros/hotspot-setup.html">
             
-                <a href="hotspot-setup.html">
+                <a href="../mikrotik-routeros/hotspot-setup.html">
             
                     
                     3.3 Generate Hotspot Server
@@ -397,9 +395,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.4" data-path="hotspot-profile.html">
+        <li class="chapter " data-level="1.4.4" data-path="../mikrotik-routeros/hotspot-profile.html">
             
-                <a href="hotspot-profile.html">
+                <a href="../mikrotik-routeros/hotspot-profile.html">
             
                     
                     3.4 Hotspot Server Profile
@@ -410,9 +408,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.5" data-path="upload-hotspot-site.html">
+        <li class="chapter " data-level="1.4.5" data-path="../mikrotik-routeros/upload-hotspot-site.html">
             
-                <a href="upload-hotspot-site.html">
+                <a href="../mikrotik-routeros/upload-hotspot-site.html">
             
                     
                     3.5 Upload Site Zip file
@@ -442,9 +440,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../cloud-hotspot/create-a-site-with-ros-hotspot.html">
+        <li class="chapter active" data-level="1.5.1" data-path="create-a-site-with-ros-hotspot.html">
             
-                <a href="../cloud-hotspot/create-a-site-with-ros-hotspot.html">
+                <a href="create-a-site-with-ros-hotspot.html">
             
                     
                     4.1 Create a site for ros-hotspot
@@ -455,9 +453,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../cloud-hotspot/create-a-site-with-unifi-controller.html">
+        <li class="chapter " data-level="1.5.2" data-path="create-a-site-with-unifi-controller.html">
             
-                <a href="../cloud-hotspot/create-a-site-with-unifi-controller.html">
+                <a href="create-a-site-with-unifi-controller.html">
             
                     
                     4.2 Create a site for unifi-controller
@@ -502,7 +500,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >3.4 Hotspot Server Profile</a>
+        <a href=".." >4.1 Create a site for ros-hotspot</a>
     </h1>
 </div>
 
@@ -517,25 +515,35 @@
     
 					<section class="normal markdown-section">
 						
-						<h3 id="setting-hotspot-profile">Setting Hotspot Profile</h3>
-<p>1.1 Open server Profile page</p>
-<p><img src="../../image/Hotspot-server-profile.png" alt=""></p>
-<p>1.2 Set Hotspot Server Profile</p>
-<p>**Tips&#xFF1A; Enable  HTTP PAP,MAC Cookie</p>
-<p><img src="../../image/Hotspot-server-profile-1.png" alt=""></p>
-<h3 id="setting-users--users-profile">Setting Users &amp; Users Profile</h3>
-<p>1.3 Set User(Change Username or password)</p>
-<p><img src="../../image/Hotspot-user.png" alt=""></p>
-<p>1.4 Set User Profile</p>
-<p>** Shared users Set empty or the number you should set</p>
-<p><img src="../../image/Hotspot-user-profile.png" alt=""></p>
-<h3 id="setting-cloud-hotspot-profile">Setting Cloud Hotspot Profile</h3>
-<p>1.5 Set Walled-Garden Code&#xFF08;Require&#xFF09;</p>
-<p>Please Copy the code below</p>
-<pre><code>/ip hotspot walled-garden add dst-host=*.cloudshotspot.com dst-port=80,443
-</code></pre><p>1.6 Terminal code </p>
-<p>Please paste the code that you have copyed</p>
-<p><img src="../../image/Hotspot-terminal.png" alt=""></p>
+						<h1 id="&#x5BF9;&#x63A5;mikrotik-routeros----hotspot">&#x5BF9;&#x63A5;Mikrotik RouterOS -  Hotspot</h1>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x5F53;&#x6211;&#x4EEC;&#x60F3;&#x7528;ROS hotspot&#x90E8;&#x7F72;&#x70ED;&#x70B9;&#x5B9E;&#x73B0;&#x624B;&#x673A;SMS&#x77ED;&#x4FE1;,&#x5FAE;&#x4FE1;&#x8FDE;Wi-Fi,&#x4F1A;&#x5458;&#x8D26;&#x53F7;,&#x4E0A;&#x7F51;&#x51ED;&#x8BC1;&#x7801;(Voucher)&#x4E0A;&#x7F51;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x65F6;.&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x4E91;&#x70ED;&#x70B9;(Cloud Hotspot)&#x63D0;&#x4F9B;&#x7684;&#x76F8;&#x5173;&#x529F;&#x80FD;&#x6765;&#x5FEB;&#x901F;&#x4F4E;&#x6210;&#x672C;&#x7684;&#x751F;&#x6210;Hotspot&#x6A21;&#x677F;&#x63A5;&#x5165;&#x4E91;&#x7AEF;&#x670D;&#x52A1;&#x3002;</p>
+<p>&#x767B;&#x5F55;&#x63A7;&#x5236;&#x53F0;
+<a href="https://console.cloudshotspot.com" target="_blank">https://console.cloudshotspot.com</a></p>
+<h3 id="1&#x521B;&#x5EFA;&#x7AD9;&#x70B9;&#xFF1A;">1.&#x521B;&#x5EFA;&#x7AD9;&#x70B9;&#xFF1A;</h3>
+<p>&#x6210;&#x529F;&#x767B;&#x5F55;&#x540E;,&#x70B9;&#x51FB;&#x521B;&#x5EFA;&#x7AD9;&#x70B9;&#x3002;</p>
+<p><img src="../../image/Cloud-hotspot-create-site-en.png" alt=""></p>
+<h3 id="2&#x7AD9;&#x70B9;&#x4FE1;&#x606F;">2.&#x7AD9;&#x70B9;&#x4FE1;&#x606F;:</h3>
+<p>&#x54C1;&#x724C;&#x7C7B;&#x578B;:&#x9009;&#x62E9;Mikrotik</p>
+<p>&#x8F93;&#x5165;&#x76F8;&#x5E94;&#x7684;&#x4FE1;&#x606F;
+IP&#x5730;&#x5740;&#xFF1A;&#x8F93;&#x5165;Ros Hotspot&#x670D;&#x52A1;&#x63A5;&#x53E3;&#x7684;IP&#x5730;&#x5740;</p>
+<p>&#x8DF3;&#x8F6C;URL:&#x8F93;&#x5165;&#x8BA4;&#x8BC1;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x8DF3;&#x8F6C;&#x7684;URL&#x7F51;&#x5740;</p>
+<p>&#x7136;&#x540E;&#x9009;&#x62E9;&#x4E0B;&#x4E00;&#x6B65;.</p>
+<p><img src="../../image/Cloud-hotspot-site-information-en.png" alt=""></p>
+<h3 id="3&#x8D26;&#x53F7;&#x4FE1;&#x606F;">3.&#x8D26;&#x53F7;&#x4FE1;&#x606F;</h3>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x8FD9;&#x91CC;&#x7684;&#x7528;&#x6237;&#x4E0E;&#x5BC6;&#x7801;&#x5728;&#x914D;&#x7F6E;hotspot&#x65F6;&#x8981;&#x4E00;&#x81F4;</p>
+<p><img src="../../image/Cloud-hotspot-user-information-en.png" alt=""></p>
+<h3 id="4&#x8BBE;&#x5907;&#x4FE1;&#x606F;">4.&#x8BBE;&#x5907;&#x4FE1;&#x606F;</h3>
+<p>&#x7269;&#x7406;&#x8BBE;&#x5907;:&#x5C31;&#x662F;MAC&#x5730;&#x5740;,&#x5C31;&#x662F;&#x670D;&#x52A1;Hotspot&#x7684;&#x63A5;&#x53E3;</p>
+<p>&#x533A;&#x57DF;&#x4F4D;&#x7F6E;:&#x670D;&#x52A1;&#x5668;&#x6240;&#x5728;&#x7684;&#x5730;&#x7406;&#x4F4D;&#x7F6E;,&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x6700;&#x63A5;&#x8FD1;&#x7684;</p>
+<p><img src="../../image/Cloud-hotspot-device-information-en.png" alt=""></p>
+<h3 id="5&#x9009;&#x62E9;&#x5957;&#x9910;">5.&#x9009;&#x62E9;&#x5957;&#x9910;</h3>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x9009;&#x62E9;&#x514D;&#x8D39;</p>
+<p><img src="../../image/Cloud-hotspot-package-plan-en.png" alt=""></p>
+<h3 id="6&#x914D;&#x7F6E;&#x4FE1;&#x606F;">6.&#x914D;&#x7F6E;&#x4FE1;&#x606F;</h3>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x6B65;&#x9AA4;,&#x8BF4;&#x660E;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x7AD9;&#x70B9;&#x5B8C;&#x6210;. </p>
+<p>&#x4E0B;&#x8F7D;&#x7AD9;&#x70B9;&#x751F;&#x6210;&#x7684;hotspot&#x6A21;&#x677F;ZIP&#x6587;&#x4EF6;,&#x4E0A;&#x4F20;&#x81F3;RouterOS&#x4E2D;</p>
+<p>&#x590D;&#x5236;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x7C98;&#x8D34;&#x5230;&#x8DEF;&#x7531;&#x5668;&#x4E2D;</p>
+<p><img src="../../image/Cloud-hotspot-success-en.png" alt=""></p>
 
 						
 					</section>
@@ -563,12 +571,8 @@
 
 		
 		
-		<a href="hotspot-setup.html" class="navigation navigation-prev " aria-label="Previous page: 3.3 Generate Hotspot Server">
-			<i class="fa fa-angle-left"></i>
-		</a>
 		
-		
-		<a href="upload-hotspot-site.html" class="navigation navigation-next " aria-label="Next page: 3.5 Upload Site Zip file">
+		<a href="create-a-site-with-unifi-controller.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 4.2 Create a site for unifi-controller">
 			<i class="fa fa-angle-right"></i>
 		</a>
 		
@@ -578,7 +582,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"title":"3.4 Hotspot Server Profile","level":"1.4.4","depth":2,"next":{"title":"3.5 Upload Site Zip file","level":"1.4.5","depth":2,"path":"mikrotik-routeros/upload-hotspot-site.md","ref":"mikrotik-routeros/upload-hotspot-site.md","articles":[]},"previous":{"title":"3.3 Generate Hotspot Server","level":"1.4.3","depth":2,"path":"mikrotik-routeros/hotspot-setup.md","ref":"mikrotik-routeros/hotspot-setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","language-picker","chapter-fold","folding-chapters-2","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"language-picker":{"grid-columns":3},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","sitemap":{"hostname":"https://docs.cloudshotspot.com/"},"folding-chapters-2":{},"custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"en","gitbook":"*"},"file":{"path":"mikrotik-routeros/hotspot-profile.md","mtime":"2019-06-16T08:03:02.956Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-30T15:16:47.159Z"},"basePath":"..","book":{"language":"en"}});
+			gitbook.page.hasChanged({"page":{"title":"4.1 Create a site for ros-hotspot","level":"1.5.1","depth":2,"next":{"title":"4.2 Create a site for unifi-controller","level":"1.5.2","depth":2,"path":"cloud-hotspot/create-a-site-with-unifi-controller.md","ref":"cloud-hotspot/create-a-site-with-unifi-controller.md","articles":[]},"previous":{"title":"Cloud Hotspot","level":"1.5","depth":1,"ref":"","articles":[{"title":"4.1 Create a site for ros-hotspot","level":"1.5.1","depth":2,"path":"cloud-hotspot/create-a-site-with-ros-hotspot.md","ref":"cloud-hotspot/create-a-site-with-ros-hotspot.md","articles":[]},{"title":"4.2 Create a site for unifi-controller","level":"1.5.2","depth":2,"path":"cloud-hotspot/create-a-site-with-unifi-controller.md","ref":"cloud-hotspot/create-a-site-with-unifi-controller.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","language-picker","chapter-fold","folding-chapters-2","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"language-picker":{"grid-columns":3},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","sitemap":{"hostname":"https://docs.cloudshotspot.com/"},"folding-chapters-2":{},"custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"en","gitbook":"*"},"file":{"path":"cloud-hotspot/create-a-site-with-ros-hotspot.md","mtime":"2019-06-30T15:12:38.763Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-30T15:16:47.159Z"},"basePath":"..","book":{"language":"en"}});
 		});
 	</script>
 </div>
