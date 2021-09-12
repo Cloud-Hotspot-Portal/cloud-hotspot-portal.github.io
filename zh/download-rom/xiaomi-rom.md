@@ -2,7 +2,7 @@
 
 
 
-###1.1 小米 R3G 稳定版
+##一. 小米 R3G 稳定版
 
  
 
@@ -14,7 +14,12 @@
 	[id]: ../system-rom/cloud-hotspot-xiaomi-R3G.zip "Optional Title Here"
 	　　所以我就直接这么写了
  -->
+###1.1 安装指导说明
 [系统安装教程](../guide-install/xiaomi-r3g-tutorial.html "系统安装指导") 
 
-[下载系统固件](../../system-rom/cloud-hotspot-xiaomi-R3G.zip)
+ 
+###1.2 系统下载
+<a href="../../system-rom/cloud-hotspot-xiaomi-R3G.zip" target="_blank">系统固件下载</a>
 
+###1.3 CDN加速
+<a href="https://cdn.cloudshotspot.com/system-rom/cloud-hotspot-xiaomi-R3G.zip" target="_blank">系统固件下载(CDN加速)</a>
