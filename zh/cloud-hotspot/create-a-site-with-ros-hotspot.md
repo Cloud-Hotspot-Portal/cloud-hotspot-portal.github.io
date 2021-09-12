@@ -9,7 +9,7 @@ https://console.cloudshotspot.com
 
 成功登录后,点击创建站点。
 
-![](../../image/Cloud-hotspot-create-site-en.png)
+![](../../image/Cloud-hotspot-create-site-zh.png)
 
 ###2.站点信息:
 
@@ -22,13 +22,13 @@ IP地址：输入Ros Hotspot服务接口的IP地址
 
 然后选择下一步.
 
-![](../../image/Cloud-hotspot-site-information-en.png)
+![](../../image/Cloud-hotspot-site-information-zh.png)
 
 ###3.账号信息
 
 说明：这里的用户与密码在配置hotspot时要一致
 
-![](../../image/Cloud-hotspot-user-information-en.png)
+![](../../image/Cloud-hotspot-user-information-zh.png)
 
 ###4.设备信息
 
@@ -36,13 +36,13 @@ IP地址：输入Ros Hotspot服务接口的IP地址
 
 区域位置:服务器所在的地理位置,选择一个最接近的
 
-![](../../image/Cloud-hotspot-device-information-en.png)
+![](../../image/Cloud-hotspot-device-information-zh.png)
 
 ###5.选择套餐
 
 在这里选择免费
 
-![](../../image/Cloud-hotspot-package-plan-en.png)
+![](../../image/Cloud-hotspot-package-plan-zh.png)
 
 ###6.配置信息
 
@@ -52,5 +52,5 @@ IP地址：输入Ros Hotspot服务接口的IP地址
 
 复制配置信息，粘贴到路由器中
 
-![](../../image/Cloud-hotspot-success-en.png)
+![](../../image/Cloud-hotspot-success-zh.png)
 

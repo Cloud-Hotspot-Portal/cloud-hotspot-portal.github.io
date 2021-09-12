@@ -40,7 +40,7 @@
 
 1.7 设置SMTP 服务
 
-![](../../image/Hotspot-SMTP-Server.png)
+![](D:\gitbook\latest-test\image\Hotspot-SMTP-Server.png)
 
 
 
