@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>4.1 Create a site for ros-hotspot · Cloud Hotspot</title>
+        <title>5.1 Xiaomi R3G · Cloud Hotspot</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="Cloud Hotspot">
@@ -72,8 +72,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
-    
-    <link rel="next" href="create-a-site-with-unifi-controller.html" />
     
     
 
@@ -291,9 +289,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="create-a-site-with-ros-hotspot.html">
+        <li class="chapter " data-level="1.4.1" data-path="../cloud-hotspot/create-a-site-with-ros-hotspot.html">
             
-                <a href="create-a-site-with-ros-hotspot.html">
+                <a href="../cloud-hotspot/create-a-site-with-ros-hotspot.html">
             
                     
                     4.1 Create a site for ros-hotspot
@@ -304,9 +302,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="create-a-site-with-unifi-controller.html">
+        <li class="chapter " data-level="1.4.2" data-path="../cloud-hotspot/create-a-site-with-unifi-controller.html">
             
-                <a href="create-a-site-with-unifi-controller.html">
+                <a href="../cloud-hotspot/create-a-site-with-unifi-controller.html">
             
                     
                     4.2 Create a site for unifi-controller
@@ -343,9 +341,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="../guide-install/xiaomi-r3g-tutorial.html">
+        <li class="chapter active" data-level="2.1.1" data-path="xiaomi-r3g-tutorial.html">
             
-                <a href="../guide-install/xiaomi-r3g-tutorial.html">
+                <a href="xiaomi-r3g-tutorial.html">
             
                     
                     5.1 Xiaomi R3G
@@ -422,7 +420,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >4.1 Create a site for ros-hotspot</a>
+        <a href=".." >5.1 Xiaomi R3G</a>
     </h1>
 </div>
 
@@ -437,36 +435,74 @@
     
 					<section class="normal markdown-section">
 						
-						<h1 id="&#x5BF9;&#x63A5;mikrotik-routeros----hotspot">&#x5BF9;&#x63A5;Mikrotik RouterOS -  Hotspot</h1>
-<p>&#x8BF4;&#x660E;&#xFF1A;&#x5F53;&#x6211;&#x4EEC;&#x60F3;&#x7528;ROS hotspot&#x90E8;&#x7F72;&#x70ED;&#x70B9;&#x5B9E;&#x73B0;&#x624B;&#x673A;SMS&#x77ED;&#x4FE1;,&#x5FAE;&#x4FE1;&#x8FDE;Wi-Fi,&#x4F1A;&#x5458;&#x8D26;&#x53F7;,&#x4E0A;&#x7F51;&#x51ED;&#x8BC1;&#x7801;(Voucher)&#x4E0A;&#x7F51;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x65F6;.&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x4E91;&#x70ED;&#x70B9;(Cloud Hotspot)&#x63D0;&#x4F9B;&#x7684;&#x76F8;&#x5173;&#x529F;&#x80FD;&#x6765;&#x5FEB;&#x901F;&#x4F4E;&#x6210;&#x672C;&#x7684;&#x751F;&#x6210;Hotspot&#x6A21;&#x677F;&#x63A5;&#x5165;&#x4E91;&#x7AEF;&#x670D;&#x52A1;&#x3002;</p>
-<p>&#x767B;&#x5F55;&#x63A7;&#x5236;&#x53F0;
-<a href="https://console.cloudshotspot.com" target="_blank">https://console.cloudshotspot.com</a></p>
-<h3 id="1&#x521B;&#x5EFA;&#x7AD9;&#x70B9;&#xFF1A;">1.&#x521B;&#x5EFA;&#x7AD9;&#x70B9;&#xFF1A;</h3>
-<p>&#x6210;&#x529F;&#x767B;&#x5F55;&#x540E;,&#x70B9;&#x51FB;&#x521B;&#x5EFA;&#x7AD9;&#x70B9;&#x3002;</p>
-<p><img src="../../image/Cloud-hotspot-create-site-en.png" alt=""></p>
-<h3 id="2&#x7AD9;&#x70B9;&#x4FE1;&#x606F;">2.&#x7AD9;&#x70B9;&#x4FE1;&#x606F;:</h3>
-<p>&#x54C1;&#x724C;&#x7C7B;&#x578B;:&#x9009;&#x62E9;Mikrotik</p>
-<p>&#x8F93;&#x5165;&#x76F8;&#x5E94;&#x7684;&#x4FE1;&#x606F;
-IP&#x5730;&#x5740;&#xFF1A;&#x8F93;&#x5165;Ros Hotspot&#x670D;&#x52A1;&#x63A5;&#x53E3;&#x7684;IP&#x5730;&#x5740;</p>
-<p>&#x8DF3;&#x8F6C;URL:&#x8F93;&#x5165;&#x8BA4;&#x8BC1;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x8DF3;&#x8F6C;&#x7684;URL&#x7F51;&#x5740;</p>
-<p>&#x7136;&#x540E;&#x9009;&#x62E9;&#x4E0B;&#x4E00;&#x6B65;.</p>
-<p><img src="../../image/Cloud-hotspot-site-information-en.png" alt=""></p>
-<h3 id="3&#x8D26;&#x53F7;&#x4FE1;&#x606F;">3.&#x8D26;&#x53F7;&#x4FE1;&#x606F;</h3>
-<p>&#x8BF4;&#x660E;&#xFF1A;&#x8FD9;&#x91CC;&#x7684;&#x7528;&#x6237;&#x4E0E;&#x5BC6;&#x7801;&#x5728;&#x914D;&#x7F6E;hotspot&#x65F6;&#x8981;&#x4E00;&#x81F4;</p>
-<p><img src="../../image/Cloud-hotspot-user-information-en.png" alt=""></p>
-<h3 id="4&#x8BBE;&#x5907;&#x4FE1;&#x606F;">4.&#x8BBE;&#x5907;&#x4FE1;&#x606F;</h3>
-<p>&#x7269;&#x7406;&#x8BBE;&#x5907;:&#x5C31;&#x662F;MAC&#x5730;&#x5740;,&#x5C31;&#x662F;&#x670D;&#x52A1;Hotspot&#x7684;&#x63A5;&#x53E3;</p>
-<p>&#x533A;&#x57DF;&#x4F4D;&#x7F6E;:&#x670D;&#x52A1;&#x5668;&#x6240;&#x5728;&#x7684;&#x5730;&#x7406;&#x4F4D;&#x7F6E;,&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x6700;&#x63A5;&#x8FD1;&#x7684;</p>
-<p><img src="../../image/Cloud-hotspot-device-information-en.png" alt=""></p>
-<h3 id="5&#x9009;&#x62E9;&#x5957;&#x9910;">5.&#x9009;&#x62E9;&#x5957;&#x9910;</h3>
-<p>&#x5728;&#x8FD9;&#x91CC;&#x9009;&#x62E9;&#x514D;&#x8D39;</p>
-<p><img src="../../image/Cloud-hotspot-package-plan-en.png" alt=""></p>
-<h3 id="6&#x914D;&#x7F6E;&#x4FE1;&#x606F;">6.&#x914D;&#x7F6E;&#x4FE1;&#x606F;</h3>
-<p>&#x5728;&#x8FD9;&#x4E00;&#x6B65;&#x9AA4;,&#x8BF4;&#x660E;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x7AD9;&#x70B9;&#x5B8C;&#x6210;. </p>
-<p>&#x4E0B;&#x8F7D;&#x7AD9;&#x70B9;&#x751F;&#x6210;&#x7684;hotspot&#x6A21;&#x677F;ZIP&#x6587;&#x4EF6;,&#x4E0A;&#x4F20;&#x81F3;RouterOS&#x4E2D;</p>
-<p>&#x590D;&#x5236;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x7C98;&#x8D34;&#x5230;&#x8DEF;&#x7531;&#x5668;&#x4E2D;</p>
-<p><img src="../../image/Cloud-hotspot-success-en.png" alt=""></p>
+						<h1 id="xiaomi-r3g-hardware-configuration">XIAOMI R3G HARDWARE CONFIGURATION</h1>
+<p>Processor Chip&#xFF1A;MT7621A MIPS dual-core 880MHz</p>
+<p>DRAM MEMORY: 256MB DDR3-1200</p>
+<p>Flash:128MB SLC Nand Flash</p>
+<p>Wi-Fi Chips&#xFF1A;7612EN &amp; 7603EN</p>
+<p>Interface&#xFF1A;1 USB 2.0 port</p>
+<p>Wireless rate: 2.4G:300Mbps,5G:867Mbps</p>
+<p><img src="../../image/xiaomi-router-R3g.jpg" alt="img"></p>
+<h2 id="r3g-router-brush-main-process&#xFF1A;">R3G ROUTER BRUSH MAIN PROCESS:&#xFF1A;</h2>
+<pre><code>1. Setup the router and install a dev firmware
 
+2. Downloading  tool kit for SSH
+
+3. Format a USB drive with FAT / FAT32 and copy the downloaded miwifi_ssh.bin to it.
+
+4. Put USB drive in to the Router for turn on the SSH 
+
+5. Login to the router using SSH
+
+6. Get Cloud-Hotspot Firmware and Install it
+</code></pre><h2 id="upgrade-the-development-firmware">Upgrade the development firmware</h2>
+<h3 id="1connect-the-r3g-router-with-a-computer-to-ensure-that-the-computer-and-the-router-are-interoperable">1.CONNECT THE R3G ROUTER WITH A COMPUTER TO ENSURE THAT THE COMPUTER AND THE ROUTER ARE INTEROPERABLE</h3>
+<h3 id="2-open-the-browser-to-enter-the-routers-domain-name-miwificom-or-the-routers-ip-address-into-the-management-page">2. Open the browser to enter the router&apos;s domain name miwifi.com or the router&apos;s ip address, into the management page</h3>
+<p><img src="../../image/welcome-1.webp" alt="img"></p>
+<p><img src="../../image/welcome-2.webp" alt="img"></p>
+<h3 id="3-go-to-xiaomi-routers-official-website-to-download-the-r3g-development-firmware">3. GO TO XIAOMI ROUTER&apos;S OFFICIAL WEBSITE TO DOWNLOAD THE R3G DEVELOPMENT FIRMWARE</h3>
+<p><a href="https://links.jianshu.com/go?to=http%3A%2F%2Fwww1.miwifi.com%2Fmiwifi_download.html" target="_blank">http://www1.miwifi.com/miwifi_download.html</a></p>
+<p><img src="../../image/welcome-3.webp" alt="img"></p>
+<h3 id="4-click-on-the-system-upgrade-in-the-router-management-page-enter-the-upgrade-interface-and-then-select-the-downloaded-firmware-for-the-upgrade">4. Click on the system upgrade in the router management page, enter the upgrade interface, and then select the downloaded firmware for the upgrade</h3>
+<p><img src="../../image/welcome-4.webp" alt="img"></p>
+<p><img src="../../image/welcome-5.webp" alt="img"></p>
+<p><img src="../../image/welcome-6.webp" alt="img"></p>
+<h3 id="5download-the-ssh-kit">5.Download the ssh kit</h3>
+<p>after upgrading the development version of the firmware that ssh service is disable, we need to go to xiaomi official website to download ssh kit</p>
+<p>open xiaomi&apos;s official website to enter the open platform center </p>
+<p><a href="https://links.jianshu.com/go?to=http%3A%2F%2Fwww1.miwifi.com%2Fmiwifi_open.html" target="_blank">http://www1.miwifi.com/miwifi_open.html</a></p>
+<p>sign in with a xiaomi account bound to a xiaomi router</p>
+<p><img src="../../image/welcome-7.webp" alt="img"></p>
+<p>here need to log in to bind xiaomi router xiaomi account, log in to view their router&apos;s ssh root password, this page also has the detailed steps to open ssh, you can follow the step by step</p>
+<p>click to download the kit</p>
+<p><img src="../../image/welcome-8.webp" alt="img"></p>
+<pre><code>Setup the router and install a dev firmware, for example cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_12f97_2.25.124.bin
+Install the Mi Wi-Fi app on a phone or tablet. (Android | there is also an iOS app)
+Open the app and connect your router. Also sign in to link that router to your account. The router should be detected assuming you are connected to its WiFi and the router is connected to the internet. It might also work without that. You also might get an error message when trying to connect the router stating that the device is no Mi Router. In that case using an older version of the app from pages like https://apkmirror.com will probably help.
+On a PC, visit https://d.miwifi.com/rom/ssh and sign-in to your account. It is important to have the https version. It might get switched to http and show an error. Changing that to https again should make the page load again. This is also the case for all clicks on that website, for example the download link will also probably only work if changing manually to https after getting an error. Alternatively, redirection and loading problems can be avoided by directly accessing the page. After signing-in to your xiaomi account get your &#x201C;userID&#x201D; (the number near your profile pic), then copy-paste it to the following link https://d.miwifi.com/rom/ssh?userId=&lt;yourUserID&gt;.
+After login, a page with your router, root password for SSH access and a download button should be displayed. Press the download button to download the miwifi_ssh.bin file. If loading/redirection problems still persist, copy the download link (button on the right of the popup dialog) and visit it after adding &#x201C;&amp;userId=&lt;yourUserID&gt;&#x201D;.
+Format a USB drive with FAT / FAT32 and copy the downloaded miwifi_ssh.bin to it.
+Shut down the router (unplug it) and put the USB drive in. Now you have to hold down the reset button of the router (use a paper-clip for example) while powering the router on (plugging the power cable in). Continue holding the button until you see the yellow LED start to flash. This might take a while (about 15 seconds). Now you can release the button. The router will reboot soon. Afterwards you should have SSH access.
+Login to the router using SSH with root as username and the root password that is displayed on https://d.miwifi.com/rom/ssh.
+</code></pre><h3 id="6install-firmware-of-the-cloud-hotspot-system">6.Install firmware of the Cloud-Hotspot system</h3>
+<p>Login to the router using SSH with root as username and the root password that is displayed on <a href="https://d.miwifi.com/rom/ssh" target="_blank">https://d.miwifi.com/rom/ssh</a>.</p>
+<p>now that the router has turned on the ssh service, we need to connect to the router with ssh, and here we use the xshell tool</p>
+<p>enter <a href="https://links.jianshu.com/go?to=mailto%3Aroot%40miwifi.com" target="_blank">root@miwifi.com</a>  // if you know the ip address of the router, such as 192.168.31.1 you can also enter it</p>
+<p>ssh root@192.168.31.1 password is the root password shown in the timmy developer center in the previous step</p>
+<p><img src="../../image/welcome-9.webp" alt="img"></p>
+<p>Open the winscp tool and upload the Cloud-Hotspot system firmware to the router</p>
+<p><img src="../../image/welcome-10.webp" alt="img"></p>
+<p>go back to the router ssh terminal and install the firmware</p>
+<pre><code>mtd write cloud-hotspot-xiaomi_mi-router-3g-squashfs-kernel1.bin kernel1
+
+mtd write cloud-hotspot-xiaomi_mi-router-3g-squashfs-rootfs0.bin rootfs0
+
+nvram set flag_try_sys1_failed=1
+
+nvram commit
+</code></pre><p>Upgrading Firmware  (router with OpenWRT installed):</p>
+<pre><code>sysupgreade -n cloud-hotspot-xiaomi_mi-router-3g-squashfs-sysupgrade.bin
+</code></pre>
 						
 					</section>
 					
@@ -494,17 +530,13 @@ IP&#x5730;&#x5740;&#xFF1A;&#x8F93;&#x5165;Ros Hotspot&#x670D;&#x52A1;&#x63A5;&#x
 		
 		
 		
-		<a href="create-a-site-with-unifi-controller.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 4.2 Create a site for unifi-controller">
-			<i class="fa fa-angle-right"></i>
-		</a>
-		
 		
 		
 	</div>
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"title":"4.1 Create a site for ros-hotspot","level":"1.4.1","depth":2,"next":{"title":"4.2 Create a site for unifi-controller","level":"1.4.2","depth":2,"path":"cloud-hotspot/create-a-site-with-unifi-controller.md","ref":"cloud-hotspot/create-a-site-with-unifi-controller.md","articles":[]},"previous":{"title":"Cloud Hotspot","level":"1.4","depth":1,"ref":"","articles":[{"title":"4.1 Create a site for ros-hotspot","level":"1.4.1","depth":2,"path":"cloud-hotspot/create-a-site-with-ros-hotspot.md","ref":"cloud-hotspot/create-a-site-with-ros-hotspot.md","articles":[]},{"title":"4.2 Create a site for unifi-controller","level":"1.4.2","depth":2,"path":"cloud-hotspot/create-a-site-with-unifi-controller.md","ref":"cloud-hotspot/create-a-site-with-unifi-controller.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","language-picker","chapter-fold","folding-chapters-2","multilingual-index","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"language-picker":{"grid-columns":3},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","sitemap":{"hostname":"https://docs.cloudshotspot.com/"},"multilingual-index":{"enableSuper":false,"index":"index.html"},"folding-chapters-2":{},"custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"en","gitbook":"*"},"file":{"path":"cloud-hotspot/create-a-site-with-ros-hotspot.md","mtime":"2021-09-12T09:22:15.406Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-19T14:24:28.896Z"},"basePath":"..","book":{"language":"en"}});
+			gitbook.page.hasChanged({"page":{"title":"5.1 Xiaomi R3G","level":"2.1.1","depth":2,"next":{"title":"Download ROM Firmware","level":"2.2","depth":1,"ref":"","articles":[{"title":"6.1 Xiaomi Router","level":"2.2.1","depth":2,"path":"download-rom/xiaomi-rom.md","ref":"download-rom/xiaomi-rom.md","articles":[]}]},"previous":{"title":"System Installation","level":"2.1","depth":1,"ref":"","articles":[{"title":"5.1 Xiaomi R3G","level":"2.1.1","depth":2,"path":"guide-install/xiaomi-r3g-tutorial.md","ref":"guide-install/xiaomi-r3g-tutorial.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","language-picker","chapter-fold","folding-chapters-2","multilingual-index","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"language-picker":{"grid-columns":3},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","sitemap":{"hostname":"https://docs.cloudshotspot.com/"},"multilingual-index":{"enableSuper":false,"index":"index.html"},"folding-chapters-2":{},"custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"en","gitbook":"*"},"file":{"path":"guide-install/xiaomi-r3g-tutorial.md","mtime":"2021-09-14T14:15:04.023Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-19T14:24:28.896Z"},"basePath":"..","book":{"language":"en"}});
 		});
 	</script>
 </div>
