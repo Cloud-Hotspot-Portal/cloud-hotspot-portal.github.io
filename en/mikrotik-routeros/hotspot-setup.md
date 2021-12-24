@@ -56,7 +56,7 @@ Steps：  Hotspot  Setup
 
 1.10 Configure Hotspot Account
 
-`*** Very Important` The username and password here as some as you have entered on "Create Site" Page
+`*** Very Important` The username and password here as same as you have entered on "Create Site" Page
 
 ![](../../image/Hotspot-username-and-password.png)
 
