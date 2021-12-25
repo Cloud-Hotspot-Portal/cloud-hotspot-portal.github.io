@@ -90,15 +90,18 @@ yum install xz wget
 
 ```
 ![](../../image/CentOS7-download-unifi-controller.png)
-解压文件
+
+解压文件并unifi controller
 ```shell 
-mkdir tools
+mkdir tools && mv unifi_sysvinit_all.deb tools && cd tools
 ar -xv unifi_sysvinit_all.deb &&  tar -vxf data.tar.xz
 
 cp -fr usr/lib/unifi /usr/local/
 
 cd /usr/local/unifi/bin && ln -fs /usr/bin/mongod mongod #创建链接 
 ```
+
+![](../../image/CentOS7-extract-unifi-controller.png)
 
 https://dl.ui.com/unifi/6.5.55/unifi_sysvinit_all.deb
 

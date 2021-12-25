@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url> <loc>https://docs.cloudshotspot.com/undefinedREADME.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedubiquiti-network/CentOS-7-install-unifi-controller.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedubiquiti-network/wireless-setup.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedubiquiti-network/Guest-portal.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedmikrotik-routeros/winbox-connect-to-router.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedmikrotik-routeros/basic-configure.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedmikrotik-routeros/hotspot-setup.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedmikrotik-routeros/hotspot-profile.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedmikrotik-routeros/upload-hotspot-site.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedcloud-hotspot/create-a-site-with-ros-hotspot.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedcloud-hotspot/create-a-site-with-unifi-controller.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedguide-install/xiaomi-r3g-tutorial.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefineddownload-rom/xiaomi-rom.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedREADME.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedubiquiti-network/wireless-setup.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedubiquiti-network/Guest-portal.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedmikrotik-routeros/winbox-connect-to-router.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedmikrotik-routeros/basic-configure.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedmikrotik-routeros/hotspot-setup.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedmikrotik-routeros/hotspot-profile.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedmikrotik-routeros/upload-hotspot-site.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedcloud-hotspot/create-a-site-with-ros-hotspot.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedcloud-hotspot/create-a-site-with-unifi-controller.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefinedguide-install/xiaomi-r3g-tutorial.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.cloudshotspot.com/undefineddownload-rom/xiaomi-rom.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/ubiquiti-network/wireless-setup.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/ubiquiti-network/Guest-portal.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/mikrotik-routeros/winbox-connect-to-router.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/mikrotik-routeros/basic-configure.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/mikrotik-routeros/hotspot-setup.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/mikrotik-routeros/hotspot-profile.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/mikrotik-routeros/upload-hotspot-site.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/cloud-hotspot/create-a-site-with-ros-hotspot.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/cloud-hotspot/create-a-site-with-unifi-controller.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/guide-install/xiaomi-r3g-tutorial.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.cloudshotspot.com/en/download-rom/xiaomi-rom.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
