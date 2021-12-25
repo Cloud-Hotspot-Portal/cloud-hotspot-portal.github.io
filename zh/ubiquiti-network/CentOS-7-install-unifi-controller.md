@@ -1,5 +1,4 @@
- ###CentOS 7 安装 Unifi Controller 最新版本
-
+#CentOS 7 安装 Unifi Controller 最新版本
 
 1.1 用SSH工具以root管理员身份登录到服务器
 
@@ -69,7 +68,7 @@ systemctl status mongod  #查看mongod运行状态
 
 ```
 
-
+![](../../image/centos7-java-version.png)
 4.1 安装UniFi Controller
 
 
@@ -85,13 +84,14 @@ yum install xz wget
 下载unifi controller 6.5.55
 
 到 https://www.ui.com/download/unifi/ 下载最新Linux版UniFi控制器
+ 
 ```shell 
  wget https://dl.ui.com/unifi/6.5.55/unifi_sysvinit_all.deb --no-check-certificate
 
 ```
 ![](../../image/CentOS7-download-unifi-controller.png)
 
-解压文件并unifi controller
+解压文件并配置安装unifi controller服务
 ```shell 
 mkdir tools && mv unifi_sysvinit_all.deb tools && cd tools
 ar -xv unifi_sysvinit_all.deb &&  tar -vxf data.tar.xz
@@ -105,14 +105,12 @@ cd /usr/local/unifi/bin && ln -fs /usr/bin/mongod mongod #创建链接
 
 https://dl.ui.com/unifi/6.5.55/unifi_sysvinit_all.deb
 
-用解压软件打开，360RAR之类的软件打开，然后把unifi目录从unifi_sysvinit_all\usr\lib\提取出来
-把文件上传到 /usr/local/ 目录
-
 #编辑unifi系统服务
 ```shell 
 vi /etc/systemd/system/unifi.service 
 ```
 添加以下内容到unifi.service
+
 ```shell 
 [Unit]
 Description=UniFi AP Web Controller
@@ -126,14 +124,28 @@ SuccessExitStatus=143
 [Install]
 WantedBy=multi-user.target
 ```
+说明:-Xmx1024M是限制最大内存为1G(1024M)，如果服务器内存很大配置很好删除这项目配置即可
+![](../../image/centos-7-setup-unifi-controller.png)
+
+![](../../image/CentOS7-unifi-service.png)
+
 5. 启动  
  ```shell 
 systemctl enable unifi.service #添加到开机启动 
 systemctl start unifi.service 
 systemctl status unifi 
 ```
-6. 到腾讯云后台添加防火墙规则，把3478,8080,8443,8843,8880添加到规则内放行端口。
+![](../../image/Centos-7-install-configure-unifi-controller.png)
+
+
+6. 如果云服务器是阿里云或腾讯云提供的,请在管理平台添加防火墙规则，把3478,8080,8443,8843,8880添加到规则内放行端口即可。
 
 
 
-7. 在网页打开https://IP:8443
+7. 在浏览器打开https://IP:8443
+ 
+
+![](../../image/access-unifi-controller-on-centos-1.png)
+![](../../image/access-unifi-controller-on-centos-2.png)
+![](../../image/access-unifi-controller-on-centos-3.png)
+![](../../image/access-unifi-controller-on-centos-4.png)
