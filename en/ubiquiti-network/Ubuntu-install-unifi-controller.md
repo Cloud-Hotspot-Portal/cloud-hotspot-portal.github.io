@@ -5,7 +5,7 @@
 ![](../../image/ubuntu-18-04-ssl-tool.png)
 
 1.2 更新atp软件源
-https://blog.csdn.net/weixin_45417418/article/details/115752304
+
 ```shell
 apt-get upadte
 ```
