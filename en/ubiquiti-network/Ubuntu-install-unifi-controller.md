@@ -1,16 +1,17 @@
 #Ubuntu 18.04.6 LTS 安装Unifi Controller
 
-1.1 用SSH工具以root管理员身份登录到服务器
+##1.1 用SSH工具以root管理员身份登录到服务器
 
 ![](../../image/ubuntu-18-04-ssl-tool.png)
 
-1.2 更新atp软件源
+##1.2 更新atp软件源
 
 ```shell
 apt-get upadte
 ```
 ![](../../image/ubuntu-apt-get-update.png)
 
+##2.1 安装Java JDK8
 
 ```shell
 apt-get install openjdk-8-jdk
@@ -21,7 +22,7 @@ apt-get install openjdk-8-jdk
 ![](../../image/ubuntu-apt-get-install-java-jdk-2.png)
 
 
-3.2 检测Java安装版本信息
+##2.2 检测Java安装版本信息
 ```shell 
  java -version
 
@@ -30,7 +31,7 @@ apt-get install openjdk-8-jdk
 
 
 
-下载unifi controller 6.5.55
+##3.1下载unifi controller 6.5.55
 
 到 https://www.ui.com/download/unifi/ 下载最新Linux版UniFi控制器
  
@@ -41,7 +42,7 @@ apt-get install openjdk-8-jdk
 
 
 ![](../../image/ubuntu-install-unifi-controller.png)
-
+##3.2 安装Unifi Controller软件包 
 ```shell
 
  dpkg -i unifi_sysvinit_all.deb
@@ -57,6 +58,7 @@ Processing triggers for systemd (237-3ubuntu10.52) ...
 Errors were encountered while processing:
 unifi
 ```
+##3.3  安装Unifi Controller系统依赖软件安装包
 解决以上问题需执行以下命令，将依赖补充完整，再执行一次安装
 
 ```shell
@@ -67,7 +69,7 @@ unifi
 
 
 
-5. 启动  
+##3.4 启动 Unifi Controller服务
  ```shell 
 systemctl enable unifi.service #添加到开机启动 
 systemctl start unifi.service 
@@ -79,11 +81,14 @@ systemctl status unifi
 
   
 
-6. 如果云服务器是阿里云或腾讯云提供的,请在管理平台添加防火墙规则，把3478,8080,8443,8843,8880添加到规则内放行端口即可。
+##4.1 云服务器防火墙规则
+如果云服务器是阿里云或腾讯云提供的,请在管理平台添加防火墙规则，把3478,8080,8443,8843,8880添加到规则内放行端口即可。
 
 
 
-7. 在浏览器打开https://IP:8443
+##4.2 访问Unifi Controller服务
+
+在浏览器打开https://IP:8443
  
 
 ![](../../image/access-unifi-controller-on-centos-1.png)

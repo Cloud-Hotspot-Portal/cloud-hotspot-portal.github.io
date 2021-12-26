@@ -40,7 +40,7 @@ Steps：  Hotspot  Setup
 
 1.7 Select SMTP Server
 
-![](D:\gitbook\latest-test\image\Hotspot-SMTP-Server.png)
+![](../../image/Hotspot-SMTP-Server.png)
 
 
 
@@ -64,4 +64,4 @@ Steps：  Hotspot  Setup
 
 1.11 Done
 
-![](../../image\Hotspot-created-success.png)
+![](../../image/Hotspot-created-success.png)

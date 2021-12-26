@@ -17,7 +17,19 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
                 
             
                 
@@ -450,20 +462,22 @@
     
 					<section class="normal markdown-section">
 						
-						<h3 id="&#x4F7F;&#x7528;dhcp&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x4E92;&#x8054;&#x7F51;">&#x4F7F;&#x7528;DHCP&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x4E92;&#x8054;&#x7F51;</h3>
-<p>1.1 &#x6253;&#x5F00;DHCP&#x7BA1;&#x7406;&#x754C;&#x9762;</p>
-<p>&#x6B65;&#x9AA4;&#xFF1A;IP  -&gt;  DHCP Client</p>
+						<h3 id="使用dhcp客户端连接互联网">使用DHCP客户端连接互联网</h3>
+<p>1.1 打开DHCP管理界面</p>
+<p>步骤：IP  -&gt;  DHCP Client</p>
 <p><img src="../../image/dhcp-client.png" alt="DHCP-Client"></p>
-<p>1.2 &#x521B;&#x5EFA;DHCP Client&#x5BA2;&#x6237;&#x7AEF;</p>
+<p>1.2 创建DHCP Client客户端</p>
 <p><img src="../../image/Create-DHCP-Client.png" alt=""></p>
-<h3 id="&#x914D;&#x7F6E;nat&#x5730;&#x5740;&#x8F6C;&#x6362;">&#x914D;&#x7F6E;NAT&#x5730;&#x5740;&#x8F6C;&#x6362;</h3>
-<p>1.3 &#x6253;&#x5F00;&#x9632;&#x706B;&#x5899;NAT&#x7BA1;&#x7406;&#x754C;&#x9762; </p>
-<p>&#x6B65;&#x9AA4;&#xFF1A;IP   --&gt;  Firewall  --&gt; NAT</p>
+<h3 id="配置nat地址转换">配置NAT地址转换</h3>
+<p>1.3 打开防火墙NAT管理界面 </p>
+<p>步骤：IP   --&gt;  Firewall  --&gt; NAT</p>
 <p><img src="../../image/RouterOS-Firewall-NAT.png" alt=""></p>
-<p>1.4 &#x521B;&#x5EFA;NAT&#x5730;&#x5740;&#x8F6C;&#x6362;&#x9690;&#x85CF;</p>
+<p>1.4 创建NAT地址转换隐藏</p>
 <p><img src="../../image/Create-NAT-Rule-1.png" alt="Create-NAT-rule-to-masquerde"></p>
 <p><img src="../../image/Create-NAT-Rule-2.png" alt="Create-NAT-rule-to-masquerde"></p>
-
+<footer class="page-footer"><span class="copyright">Copyright © Cloud Hotspot cloudshotspot.com all right reserved</span><span class="footer-modification">Last update：
+2021-09-12 17:22:15
+</span></footer>
 						
 					</section>
 					
@@ -505,7 +519,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"title":"3.2 配置连接到互联网","level":"1.3.2","depth":2,"next":{"title":"3.3 创建Hotspot服务","level":"1.3.3","depth":2,"path":"mikrotik-routeros/hotspot-setup.md","ref":"mikrotik-routeros/hotspot-setup.md","articles":[]},"previous":{"title":"3.1 Winbox连接路由器","level":"1.3.1","depth":2,"path":"mikrotik-routeros/winbox-connect-to-router.md","ref":"mikrotik-routeros/winbox-connect-to-router.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","language-picker","multilingual-index","sitemap2"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","multilingual-index":{"enableSuper":false,"title":"inherit from super","index":"index.html"},"custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"sitemap2":{"hostname":"https://docs.cloudshotspot.com","lang":["zh","en"],"links":[{"lang":"zh","url":"https://docs.cloudshotspot.com/zh/"},{"lang":"en","url":"https://docs.cloudshotspot.com/en/"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://portal.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"zh","gitbook":"*"},"file":{"path":"mikrotik-routeros/basic-configure.md","mtime":"2021-09-12T09:22:15.562Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-26T05:20:27.493Z"},"basePath":"..","book":{"language":"zh"}});
+			gitbook.page.hasChanged({"page":{"title":"3.2 配置连接到互联网","level":"1.3.2","depth":2,"next":{"title":"3.3 创建Hotspot服务","level":"1.3.3","depth":2,"path":"mikrotik-routeros/hotspot-setup.md","ref":"mikrotik-routeros/hotspot-setup.md","articles":[]},"previous":{"title":"3.1 Winbox连接路由器","level":"1.3.1","depth":2,"path":"mikrotik-routeros/winbox-connect-to-router.md","ref":"mikrotik-routeros/winbox-connect-to-router.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","expandable-chapters-small","versions-select","tbfed-pagefooter","hide-element","donate","multilingual-index","sitemap2"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Cloud Hotspot cloudshotspot.com","modify_label":"Last update：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"donate":{"title":"","button":"联系我们","wechat":"/image/qrcode-oc.jpg","alipay":"/image/qrcode-us.jpg","wechatText":"云热点公众号","alipayText":"优思网络"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","multilingual-index":{"enableSuper":false,"title":"inherit from super","index":"index.html"},"custom-favicon":{},"expandable-chapters-small":{},"versions":{"options":[{"value":"/zh/","text":"简体中文"},{"value":"/en/","text":"English"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"sitemap2":{"hostname":"https://docs.cloudshotspot.com","lang":["zh","en"],"links":[{"lang":"zh","url":"https://docs.cloudshotspot.com/zh/"},{"lang":"en","url":"https://docs.cloudshotspot.com/en/"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://portal.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"zh","gitbook":"*"},"file":{"path":"mikrotik-routeros/basic-configure.md","mtime":"2021-09-12T09:22:15.562Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-26T07:01:56.778Z"},"basePath":"..","book":{"language":"zh"}});
 		});
 	</script>
 </div>
@@ -515,7 +529,19 @@
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
