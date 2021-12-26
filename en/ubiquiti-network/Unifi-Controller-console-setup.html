@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>4.2 Create a site for unifi-controller · Cloud Hotspot</title>
+        <title>2.3 Unifi Controler Setup Cloud Hotspot · Cloud Hotspot</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="Cloud Hotspot">
@@ -74,7 +74,7 @@
 
     
     
-    <link rel="prev" href="create-a-site-with-ros-hotspot.html" />
+    <link rel="prev" href="Guest-portal.html" />
     
 
     </head>
@@ -162,9 +162,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../ubiquiti-network/CentOS-7-install-unifi-controller.html">
+        <li class="chapter " data-level="1.2.1" data-path="CentOS-7-install-unifi-controller.html">
             
-                <a href="../ubiquiti-network/CentOS-7-install-unifi-controller.html">
+                <a href="CentOS-7-install-unifi-controller.html">
             
                     
                     1.1 CentOS 7 Install Unifi Controller
@@ -175,9 +175,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../ubiquiti-network/Ubuntu-install-unifi-controller.html">
+        <li class="chapter " data-level="1.2.2" data-path="Ubuntu-install-unifi-controller.html">
             
-                <a href="../ubiquiti-network/Ubuntu-install-unifi-controller.html">
+                <a href="Ubuntu-install-unifi-controller.html">
             
                     
                     1.2 Ubuntu 18 Install Unifi Controller
@@ -188,9 +188,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../ubiquiti-network/wireless-setup.html">
+        <li class="chapter " data-level="1.2.3" data-path="wireless-setup.html">
             
-                <a href="../ubiquiti-network/wireless-setup.html">
+                <a href="wireless-setup.html">
             
                     
                     2.1 Wireless Network
@@ -201,9 +201,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../ubiquiti-network/Guest-portal.html">
+        <li class="chapter " data-level="1.2.4" data-path="Guest-portal.html">
             
-                <a href="../ubiquiti-network/Guest-portal.html">
+                <a href="Guest-portal.html">
             
                     
                     2.2 Guest Control
@@ -214,9 +214,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="../ubiquiti-network/Unifi-Controller-console-setup.html">
+        <li class="chapter active" data-level="1.2.5" data-path="Unifi-Controller-console-setup.html">
             
-                <a href="../ubiquiti-network/Unifi-Controller-console-setup.html">
+                <a href="Unifi-Controller-console-setup.html">
             
                     
                     2.3 Unifi Controler Setup Cloud Hotspot
@@ -330,9 +330,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="create-a-site-with-ros-hotspot.html">
+        <li class="chapter " data-level="1.4.1" data-path="../cloud-hotspot/create-a-site-with-ros-hotspot.html">
             
-                <a href="create-a-site-with-ros-hotspot.html">
+                <a href="../cloud-hotspot/create-a-site-with-ros-hotspot.html">
             
                     
                     4.1 Create a site for ros-hotspot
@@ -343,9 +343,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="create-a-site-with-unifi-controller.html">
+        <li class="chapter " data-level="1.4.2" data-path="../cloud-hotspot/create-a-site-with-unifi-controller.html">
             
-                <a href="create-a-site-with-unifi-controller.html">
+                <a href="../cloud-hotspot/create-a-site-with-unifi-controller.html">
             
                     
                     4.2 Create a site for unifi-controller
@@ -461,7 +461,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >4.2 Create a site for unifi-controller</a>
+        <a href=".." >2.3 Unifi Controler Setup Cloud Hotspot</a>
     </h1>
 </div>
 
@@ -476,36 +476,55 @@
     
 					<section class="normal markdown-section">
 						
-						<h1 id="对接ubiquiti-network----guest-portal">对接Ubiquiti Network -  Guest Portal</h1>
-<p>登录控制台
-<a href="https://console.cloudshotspot.com" target="_blank">https://console.cloudshotspot.com</a></p>
-<h3 id="1创建站点：">1.创建站点：</h3>
-<p>成功登录后,点击创建站点。</p>
-<p><img src="../../image/Cloud-hotspot-create-site-en.png" alt=""></p>
-<h3 id="2站点信息">2.站点信息:</h3>
-<p>品牌类型:选择Ubiquiti </p>
-<p>输入相应的信息
-Unifi Controller地址：输入IP或域名都可以</p>
-<p>跳转URL:输入认证完成后的跳转的URL网址</p>
-<p>然后选择下一步.</p>
-<p><img src="../../image/Cloud-hotspot-unifi-site-information-en.png" alt=""></p>
-<h3 id="3账号信息">3.账号信息</h3>
-<p>说明：这里的用户与密码在配置hotspot时要一致</p>
-<p><img src="../../image/Cloud-hotspot-unifi-user-information-en.png" alt=""></p>
-<h3 id="4设备信息">4.设备信息</h3>
-<p>物理设备:就是MAC地址,就是服务Hotspot的接口</p>
-<p>区域位置:服务器所在的地理位置,选择一个最接近的</p>
-<p><img src="../../image/Cloud-hotspot-device-information-en.png" alt=""></p>
-<h3 id="5选择套餐">5.选择套餐</h3>
-<p>在这里选择免费</p>
-<p><img src="../../image/Cloud-hotspot-package-plan-en.png" alt=""></p>
-<h3 id="6配置信息">6.配置信息</h3>
-<p>在这一步骤,说明已经创建站点完成. </p>
-<p>下载站点生成的hotspot模板ZIP文件,上传至RouterOS中</p>
-<p>复制配置信息，粘贴到路由器中</p>
-<p><img src="../../image/Cloud-hotspot-unifi-success-en.png" alt=""></p>
+						<h1 id="unifi-controller配置cloud-hotspot">Unifi Controller配置Cloud Hotspot</h1>
+<h2 id="管理员登录unifi-controller控制管理界面如下图：">管理员登录Unifi Controller控制管理界面,如下图：</h2>
+<p> <img src="../../image/Setup-unifi-controller-overview.png" alt=""></p>
+<p> 最新版本Unifi controller Network Version 6.5.54 </p>
+<p> 本文档简单简述Guest Hotspot与云热点Cloud Hotspot进行对接,实现手机号码SMS短信验证,会员账号登录，Voucher数字验证码,一键连接免费 Free Wi-Fi的功能.</p>
+<h2 id="1-unifi-controller-设置guest-hotspot">1 Unifi Controller 设置Guest Hotspot</h2>
+<h2 id="11进入设置界面">1.1进入设置界面</h2>
+<p>  操作步骤: 
+  点击--&gt;Settings </p>
+<p> <img src="../../image/Unifi-controller-settings.png" alt=""></p>
+<h2 id="12增加新的guest-portal">1.2增加新的Guest Portal</h2>
+<p> 操作步骤: 
+  点击--&gt;Add New Guest Hotspot
+ <img src="../../image/Unifi-controller-add-guest-hotspotl.png" alt=""></p>
+<h2 id="22-配置guest-portal">2.2 配置Guest Portal</h2>
+<p>Enable Hotspot:</p>
+<p>热点状态:选择开启</p>
+<p> Name:
+ 无线Wi-Fi名称：输入自己想要的无线网络SSID，例:Cloud Hotspot</p>
+<p> Authentication Type:
+ 无线认证方式:选择 External Portal Server</p>
+<p> <img src="../../image/Unifi-controller-Guest-portal-setup.png" alt=""></p>
+<h2 id="23-设置external-portal-server">2.3 设置External Portal Server</h2>
+<p>External Portal：
+IP地址由管理控制台提供,<a href="../cloud-hotspot/create-a-site-with-unifi-controller.html">请参考此文档</a> </p>
+<p> <img src="../../image/Unifi-controller-Guest-external-portal-server.png" alt=""></p>
+<h2 id="24-设置portal-configuration">2.4 设置Portal Configuration</h2>
+<p> 操作步骤:
+ 点击高级按钮--&gt;Advanced ---&gt;Portal Configuration</p>
+<p>Secure Portal:开启</p>
+<p>Redirect Using Hostname：</p>
+<p>由云热点Cloud Hotspot管理平台提供,<a href="../cloud-hotspot/create-a-site-with-unifi-controller.html">请参考此文档</a></p>
+<p>示列：cn-portal.cloudshotspot.com</p>
+<p> <img src="../../image/unifi-controller-portal-setup.png" alt=""></p>
+<h2 id="25-设置network-isolation">2.5 设置Network Isolation</h2>
+<p>设置网络隔离与云热点进行对接</p>
+<p>Allowed Authorization Access：</p>
+<p>此处有多个参数由管理平台提供 </p>
+<p><img src="../../image/cloud-hotspot-unifi-controller.png" alt=""></p>
+<h2 id="26-保存并应用apply-changes">2.6 保存并应用Apply Changes</h2>
+<p> 操作步骤:Apply Changes</p>
+<p> <img src="../../image/cloud-hotspot-unifi-controller-apply.png" alt=""></p>
+<h2 id="27-手机查看wi-fi">2.7 手机查看Wi-Fi</h2>
+<p> <img src="../../image/wifi-portal.jpg =100x20" alt=""> </p>
+<h2 id="28-连接wi-fi接入cloud-hotspot">2.8 连接Wi-Fi接入Cloud Hotspot</h2>
+<p><img src="../../image/wifi-portal-2.jpg" alt=""> 
+<img src="../../image/wifi-portal-3.jpg" alt=""> </p>
 <footer class="page-footer"><span class="copyright">Copyright © Cloud Hotspot cloudshotspot.com all right reserved</span><span class="footer-modification">Last update：
-2021-09-12 17:22:15
+2021-12-26 17:44:37
 </span></footer>
 						
 					</section>
@@ -533,7 +552,7 @@ Unifi Controller地址：输入IP或域名都可以</p>
 
 		
 		
-		<a href="create-a-site-with-ros-hotspot.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 4.1 Create a site for ros-hotspot">
+		<a href="Guest-portal.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2.2 Guest Control">
 			<i class="fa fa-angle-left"></i>
 		</a>
 		
@@ -544,7 +563,7 @@ Unifi Controller地址：输入IP或域名都可以</p>
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"title":"4.2 Create a site for unifi-controller","level":"1.4.2","depth":2,"next":{"title":"System Installation","level":"2.1","depth":1,"ref":"","articles":[{"title":"5.1 Xiaomi R3G","level":"2.1.1","depth":2,"path":"guide-install/xiaomi-r3g-tutorial.md","ref":"guide-install/xiaomi-r3g-tutorial.md","articles":[]}]},"previous":{"title":"4.1 Create a site for ros-hotspot","level":"1.4.1","depth":2,"path":"cloud-hotspot/create-a-site-with-ros-hotspot.md","ref":"cloud-hotspot/create-a-site-with-ros-hotspot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","versions-select","tbfed-pagefooter","hide-element","donate","multilingual-index","sitemap2"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Cloud Hotspot cloudshotspot.com","modify_label":"Last update：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"donate":{"title":"","button":"联系我们","wechat":"/image/qrcode-oc.jpg","alipay":"/image/qrcode-us.jpg","wechatText":"云热点公众号","alipayText":"优思网络"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","multilingual-index":{"enableSuper":false,"title":"inherit from super","index":"index.html"},"custom-favicon":{},"versions":{"options":[{"value":"/zh/","text":"简体中文"},{"value":"/en/","text":"English"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"sitemap2":{"hostname":"https://docs.cloudshotspot.com","lang":["zh","en"],"links":[{"lang":"zh","url":"https://docs.cloudshotspot.com/zh/"},{"lang":"en","url":"https://docs.cloudshotspot.com/en/"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://portal.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"en","gitbook":"*"},"file":{"path":"cloud-hotspot/create-a-site-with-unifi-controller.md","mtime":"2021-09-12T09:22:15.406Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-26T10:11:16.181Z"},"basePath":"..","book":{"language":"en"}});
+			gitbook.page.hasChanged({"page":{"title":"2.3 Unifi Controler Setup Cloud Hotspot","level":"1.2.5","depth":2,"next":{"title":"Mikrotik RouterOS","level":"1.3","depth":1,"ref":"","articles":[{"title":"3.1 Connect to RouterOS","level":"1.3.1","depth":2,"path":"mikrotik-routeros/winbox-connect-to-router.md","ref":"mikrotik-routeros/winbox-connect-to-router.md","articles":[]},{"title":"3.2 Connect to Internet","level":"1.3.2","depth":2,"path":"mikrotik-routeros/basic-configure.md","ref":"mikrotik-routeros/basic-configure.md","articles":[]},{"title":"3.3 Generate Hotspot Server","level":"1.3.3","depth":2,"path":"mikrotik-routeros/hotspot-setup.md","ref":"mikrotik-routeros/hotspot-setup.md","articles":[]},{"title":"3.4 Hotspot Server Profile","level":"1.3.4","depth":2,"path":"mikrotik-routeros/hotspot-profile.md","ref":"mikrotik-routeros/hotspot-profile.md","articles":[]},{"title":"3.5 Upload Site Zip file","level":"1.3.5","depth":2,"path":"mikrotik-routeros/upload-hotspot-site.md","ref":"mikrotik-routeros/upload-hotspot-site.md","articles":[]}]},"previous":{"title":"2.2 Guest Control","level":"1.2.4","depth":2,"path":"ubiquiti-network/Guest-portal.md","ref":"ubiquiti-network/Guest-portal.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","versions-select","tbfed-pagefooter","hide-element","donate","multilingual-index","sitemap2"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Cloud Hotspot cloudshotspot.com","modify_label":"Last update：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"donate":{"title":"","button":"联系我们","wechat":"/image/qrcode-oc.jpg","alipay":"/image/qrcode-us.jpg","wechatText":"云热点公众号","alipayText":"优思网络"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","multilingual-index":{"enableSuper":false,"title":"inherit from super","index":"index.html"},"custom-favicon":{},"versions":{"options":[{"value":"/zh/","text":"简体中文"},{"value":"/en/","text":"English"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"sitemap2":{"hostname":"https://docs.cloudshotspot.com","lang":["zh","en"],"links":[{"lang":"zh","url":"https://docs.cloudshotspot.com/zh/"},{"lang":"en","url":"https://docs.cloudshotspot.com/en/"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://portal.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"en","gitbook":"*"},"file":{"path":"ubiquiti-network/Unifi-Controller-console-setup.md","mtime":"2021-12-26T09:44:37.540Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-26T10:11:16.181Z"},"basePath":"..","book":{"language":"en"}});
 		});
 	</script>
 </div>
