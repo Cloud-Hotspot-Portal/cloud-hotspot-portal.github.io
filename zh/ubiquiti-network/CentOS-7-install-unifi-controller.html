@@ -469,19 +469,19 @@
     
 					<section class="normal markdown-section">
 						
-						<h1 id="centos-7-install-unifi-controller-6555">CentOS 7 install Unifi Controller 6.5.55</h1>
-<h2 id="11-use-ssh-client-tool-to-log-in-to-the-server-as-the-root-administrator">1.1 Use SSH client tool to log in to the server as the root administrator</h2>
+						<h1 id="centos-7-安装-unifi-controller-最新版本">CentOS 7 安装 Unifi Controller 最新版本</h1>
+<h2 id="11-用ssh工具以root管理员身份登录到服务器">1.1 用SSH工具以root管理员身份登录到服务器</h2>
 <p><img src="../../image/ssh-tool.png" alt=""></p>
-<h2 id="12-update-yum-software-source">1.2 Update yum software source</h2>
+<h2 id="12-更新yum软件源">1.2 更新yum软件源</h2>
 <pre><code class="lang-shell">yum upadte
 </code></pre>
 <p><img src="../../image/centos-7-yum-update.png" alt=""></p>
-<h2 id="13-turn-off-the-server-firewall">1.3 Turn off the server firewall</h2>
+<h2 id="13-关闭服务器防火墙">1.3 关闭服务器防火墙</h2>
 <pre><code class="lang-shell">systemctl stop firewalld.service 
 systemctl disable firewalld.service
 </code></pre>
 <p><img src="../../image/centos-7-firewall-disable.png" alt=""></p>
-<h2 id="21-add-mongodb-software-source">2.1 Add mongodb software source</h2>
+<h2 id="21-添加mongodb软件源">2.1 添加mongodb软件源</h2>
 <pre><code class="lang-shell">vi /etc/yum.repos.d/mongodb-org-4.4.repo
 </code></pre>
 <p>添加以下内容到mongodb-org.repo</p>
@@ -492,51 +492,50 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc
 </code></pre>
-<h2 id="22-install-mongodb-44">2.2 Install mongodb-4.4</h2>
+<h2 id="22-安装mongodb-44">2.2 安装mongodb-4.4</h2>
 <pre><code class="lang-shell">yum install -y mongodb-org-4.4.1 mongodb-org-server-4.4.1
 </code></pre>
 <p><img src="../../image/centos-7-install-mongodb-4.4.png" alt="">
 <img src="../../image/centos-7-install-mongodb-4.4.1.png" alt=""></p>
-<h2 id="23-setup-mongodb">2.3 Setup Mongodb</h2>
-<p>Configure Mongodb services to start automatically at boot.and immediately run the mongodb service and then check its status</p>
-<pre><code class="lang-shell">systemctl enable mongod.service  
-systemctl start mongod.service  
-systemctl status mongod
+<h2 id="23-设置mongodb开机启动并立即运行mongodb服务检测其状态">2.3 设置Mongodb开机启动,并立即运行mongodb服务,检测其状态</h2>
+<pre><code class="lang-shell">systemctl enable mongod.service #添加到开机启动 
+systemctl start mongod.service #启动mongod
+systemctl status mongod  #查看mongod运行状态
 </code></pre>
 <p><img src="../../image/centos-7-start-mongodb-4.4.1.png" alt=""></p>
-<h2 id="31-install-java-jdk-environment">3.1 Install JAVA JDK environment</h2>
+<h2 id="31-安装java-jdk环境">3.1 安装JAVA JDK环境</h2>
 <pre><code class="lang-shell"> yum install -y java-1.8.0-openjdk
 </code></pre>
 <p><img src="../../image/centos-7-install-Java-1.8.0-openjdk-1.png" alt="">
 <img src="../../image/centos-7-install-Java-1.8.0-openjdk-2.png" alt=""></p>
-<h2 id="32-checking-the-java-version-information">3.2 Checking the JAVA version information</h2>
+<h2 id="32-检测java安装版本信息">3.2 检测Java安装版本信息</h2>
 <pre><code class="lang-shell"> java -version
 </code></pre>
 <p><img src="../../image/centos7-java-version.png" alt=""></p>
-<h2 id="41-install-unifi-controller">4.1 Install UniFi Controller</h2>
-<p>Preparation: first install wget download tool, xz decompression tool</p>
+<h2 id="41-安装unifi-controller">4.1 安装UniFi Controller</h2>
+<p>准备工作：先安装好wget下载工具,xz解压工具</p>
 <pre><code class="lang-shell">yum install xz wget
 </code></pre>
 <p><img src="../../image/Centos-7-install-wget.png" alt=""></p>
-<h2 id="42-download-unifi-controller-6555-version">4.2 Download Unifi controller 6.5.55 Version</h2>
-<p>Go to <a href="https://www.ui.com/download/unifi/" target="_blank">https://www.ui.com/download/unifi/</a> to download the latest Linux version of UniFi controller
+<h2 id="42下载unifi-controller-6555">4.2下载unifi controller 6.5.55</h2>
+<p>到 <a href="https://www.ui.com/download/unifi/" target="_blank">https://www.ui.com/download/unifi/</a> 下载最新Linux版UniFi控制器
 <a href="https://dl.ui.com/unifi/6.5.55/unifi_sysvinit_all.deb" target="_blank">https://dl.ui.com/unifi/6.5.55/unifi_sysvinit_all.deb</a></p>
 <pre><code class="lang-shell"> wget https://dl.ui.com/unifi/6.5.55/unifi_sysvinit_all.deb --no-check-certificate
 </code></pre>
 <p><img src="../../image/CentOS7-download-unifi-controller.png" alt=""></p>
-<h2 id="43-unzip-the-file-and-configure-and-install-the-unifi-controller-service">4.3 Unzip the file and configure and install the Unifi controller service</h2>
+<h2 id="43解压文件并配置安装unifi-controller服务">4.3解压文件并配置安装unifi controller服务</h2>
 <pre><code class="lang-shell">mkdir tools &amp;&amp; mv unifi_sysvinit_all.deb tools &amp;&amp; cd tools
 ar -xv unifi_sysvinit_all.deb &amp;&amp;  tar -vxf data.tar.xz
 
 cp -fr usr/lib/unifi /usr/local/
 
-cd /usr/local/unifi/bin &amp;&amp; ln -fs /usr/bin/mongod mongod
+cd /usr/local/unifi/bin &amp;&amp; ln -fs /usr/bin/mongod mongod #创建链接
 </code></pre>
 <p><img src="../../image/CentOS7-extract-unifi-controller.png" alt=""></p>
-<h2 id="44-edit-unifi-controller-system-service">4.4 Edit Unifi Controller system service</h2>
+<h2 id="44编辑unifi系统服务">4.4编辑unifi系统服务</h2>
 <pre><code class="lang-shell">vi /etc/systemd/system/unifi.service
 </code></pre>
-<p>Add the following to unifi.service</p>
+<p>添加以下内容到unifi.service</p>
 <pre><code class="lang-shell">[Unit]
 Description=UniFi AP Web Controller
 After=syslog.target network.target
@@ -549,24 +548,24 @@ SuccessExitStatus=143
 [Install]
 WantedBy=multi-user.target
 </code></pre>
-<p>Note: -Xmx1024M is to limit the maximum memory to 1GB (1024MB), if the server memory is very large, it is good to delete this proerty configuration
+<p>说明:-Xmx1024M是限制最大内存为1G(1024M)，如果服务器内存很大配置很好删除这项目配置即可
 <img src="../../image/centos-7-setup-unifi-controller.png" alt=""></p>
 <p><img src="../../image/CentOS7-unifi-service.png" alt=""></p>
-<h2 id="45-start-unifi-controller-service">4.5. Start Unifi Controller service</h2>
-<pre><code class="lang-shell">systemctl enable unifi.service  
+<h2 id="45-启动unifi-controller服务">4.5. 启动Unifi Controller服务</h2>
+<pre><code class="lang-shell">systemctl enable unifi.service #添加到开机启动 
 systemctl start unifi.service 
 systemctl status unifi
 </code></pre>
 <p><img src="../../image/Centos-7-install-configure-unifi-controller.png" alt=""></p>
-<p>If the cloud server is provided by Alibaba Cloud or Tencent Cloud, please add firewall rules on the management platform, and add 3478,8080,8443,8843,8880 to the allowed ports in the rules.</p>
-<h2 id="46--access-to-unifi-controller-service">4.6  Access to Unifi Controller service</h2>
-<p>Open <a href="https://IP:8443" target="_blank">https://IP:8443</a> in the browser</p>
+<p>如果云服务器是阿里云或腾讯云提供的,请在管理平台添加防火墙规则，把3478,8080,8443,8843,8880添加到规则内放行端口即可。</p>
+<h2 id="46-访问unifi-controller服务">4.6 访问Unifi Controller服务</h2>
+<p>在浏览器打开<a href="https://IP:8443" target="_blank">https://IP:8443</a></p>
 <p><img src="../../image/access-unifi-controller-on-centos-1.png" alt="">
 <img src="../../image/access-unifi-controller-on-centos-2.png" alt="">
 <img src="../../image/access-unifi-controller-on-centos-3.png" alt="">
 <img src="../../image/access-unifi-controller-on-centos-4.png" alt=""> </p>
 <footer class="page-footer"><span class="copyright">Copyright © Cloud Hotspot cloudshotspot.com all right reserved</span><span class="footer-modification">Last update：
-2021-12-27 21:34:15
+2021-12-26 13:46:54
 </span></footer>
 						
 					</section>
@@ -605,7 +604,7 @@ systemctl status unifi
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"title":"1.1 CentOS 7 安装Unifi Controller","level":"1.2.1","depth":2,"next":{"title":"1.2 Ubuntu 18 安装Unifi Controller","level":"1.2.2","depth":2,"path":"ubiquiti-network/Ubuntu-install-unifi-controller.md","ref":"ubiquiti-network/Ubuntu-install-unifi-controller.md","articles":[]},"previous":{"title":"Ubiquiti Network","level":"1.2","depth":1,"ref":"","articles":[{"title":"1.1 CentOS 7 安装Unifi Controller","level":"1.2.1","depth":2,"path":"ubiquiti-network/CentOS-7-install-unifi-controller.md","ref":"ubiquiti-network/CentOS-7-install-unifi-controller.md","articles":[]},{"title":"1.2 Ubuntu 18 安装Unifi Controller","level":"1.2.2","depth":2,"path":"ubiquiti-network/Ubuntu-install-unifi-controller.md","ref":"ubiquiti-network/Ubuntu-install-unifi-controller.md","articles":[]},{"title":"2.1 配置Wireless网络","level":"1.2.3","depth":2,"path":"ubiquiti-network/wireless-setup.md","ref":"ubiquiti-network/wireless-setup.md","articles":[]},{"title":"2.2 配置Guest Portal","level":"1.2.4","depth":2,"path":"ubiquiti-network/Guest-portal.md","ref":"ubiquiti-network/Guest-portal.md","articles":[]},{"title":"2.3 Unifi Controler部署Cloud Hotspot","level":"1.2.5","depth":2,"path":"ubiquiti-network/Unifi-Controller-console-setup.md","ref":"ubiquiti-network/Unifi-Controller-console-setup.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","versions-select","tbfed-pagefooter","hide-element","donate","multilingual-index","sitemap2"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Cloud Hotspot cloudshotspot.com","modify_label":"Last update：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"donate":{"title":"","button":"联系我们","wechat":"/image/qrcode-oc.jpg","alipay":"/image/qrcode-us.jpg","wechatText":"云热点公众号","alipayText":"优思网络"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","multilingual-index":{"enableSuper":false,"title":"inherit from super","index":"index.html"},"custom-favicon":{},"versions":{"options":[{"value":"/zh/","text":"简体中文"},{"value":"/en/","text":"English"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"sitemap2":{"hostname":"https://docs.cloudshotspot.com","lang":["zh","en"],"links":[{"lang":"zh","url":"https://docs.cloudshotspot.com/zh/"},{"lang":"en","url":"https://docs.cloudshotspot.com/en/"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://portal.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"zh","gitbook":"*"},"file":{"path":"ubiquiti-network/CentOS-7-install-unifi-controller.md","mtime":"2021-12-27T13:34:15.593Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-27T14:19:04.576Z"},"basePath":"..","book":{"language":"zh"}});
+			gitbook.page.hasChanged({"page":{"title":"1.1 CentOS 7 安装Unifi Controller","level":"1.2.1","depth":2,"next":{"title":"1.2 Ubuntu 18 安装Unifi Controller","level":"1.2.2","depth":2,"path":"ubiquiti-network/Ubuntu-install-unifi-controller.md","ref":"ubiquiti-network/Ubuntu-install-unifi-controller.md","articles":[]},"previous":{"title":"Ubiquiti Network","level":"1.2","depth":1,"ref":"","articles":[{"title":"1.1 CentOS 7 安装Unifi Controller","level":"1.2.1","depth":2,"path":"ubiquiti-network/CentOS-7-install-unifi-controller.md","ref":"ubiquiti-network/CentOS-7-install-unifi-controller.md","articles":[]},{"title":"1.2 Ubuntu 18 安装Unifi Controller","level":"1.2.2","depth":2,"path":"ubiquiti-network/Ubuntu-install-unifi-controller.md","ref":"ubiquiti-network/Ubuntu-install-unifi-controller.md","articles":[]},{"title":"2.1 配置Wireless网络","level":"1.2.3","depth":2,"path":"ubiquiti-network/wireless-setup.md","ref":"ubiquiti-network/wireless-setup.md","articles":[]},{"title":"2.2 配置Guest Portal","level":"1.2.4","depth":2,"path":"ubiquiti-network/Guest-portal.md","ref":"ubiquiti-network/Guest-portal.md","articles":[]},{"title":"2.3 Unifi Controler部署Cloud Hotspot","level":"1.2.5","depth":2,"path":"ubiquiti-network/Unifi-Controller-console-setup.md","ref":"ubiquiti-network/Unifi-Controller-console-setup.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","versions-select","tbfed-pagefooter","hide-element","donate","multilingual-index","sitemap2"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Cloud Hotspot cloudshotspot.com","modify_label":"Last update：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"donate":{"title":"","button":"联系我们","wechat":"/image/qrcode-oc.jpg","alipay":"/image/qrcode-us.jpg","wechatText":"云热点公众号","alipayText":"优思网络"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","multilingual-index":{"enableSuper":false,"title":"inherit from super","index":"index.html"},"custom-favicon":{},"versions":{"options":[{"value":"/zh/","text":"简体中文"},{"value":"/en/","text":"English"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"sitemap2":{"hostname":"https://docs.cloudshotspot.com","lang":["zh","en"],"links":[{"lang":"zh","url":"https://docs.cloudshotspot.com/zh/"},{"lang":"en","url":"https://docs.cloudshotspot.com/en/"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://portal.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"zh","gitbook":"*"},"file":{"path":"ubiquiti-network/CentOS-7-install-unifi-controller.md","mtime":"2021-12-26T05:46:54.665Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-27T14:35:19.289Z"},"basePath":"..","book":{"language":"zh"}});
 		});
 	</script>
 </div>
