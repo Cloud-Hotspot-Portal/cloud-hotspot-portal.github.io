@@ -1,17 +1,19 @@
-#CentOS 7 安装 Unifi Controller 最新版本
+#CentOS 7 install Unifi Controller 6.5.55 
+ 
 
-##1.1 用SSH工具以root管理员身份登录到服务器
+##1.1 Use SSH client tool to log in to the server as the root administrator
+
 
 ![](../../image/ssh-tool.png)
 
-##1.2 更新yum软件源
+##1.2 Update yum software source
 
 ```shell
 yum upadte
 ```
 ![](../../image/centos-7-yum-update.png)
 
-##1.3 关闭服务器防火墙
+##1.3 Turn off the server firewall
 ```shell
 systemctl stop firewalld.service 
 systemctl disable firewalld.service
@@ -20,7 +22,7 @@ systemctl disable firewalld.service
 ![](../../image/centos-7-firewall-disable.png)
 
 
-##2.1 添加mongodb软件源
+##2.1 Add mongodb software source
 
  ```shell
 vi /etc/yum.repos.d/mongodb-org-4.4.repo
@@ -37,7 +39,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc
 
 ```
  
-##2.2 安装mongodb-4.4
+##2.2 Install mongodb-4.4
 ```shell
 yum install -y mongodb-org-4.4.1 mongodb-org-server-4.4.1
 
@@ -45,16 +47,18 @@ yum install -y mongodb-org-4.4.1 mongodb-org-server-4.4.1
 ![](../../image/centos-7-install-mongodb-4.4.png)
 ![](../../image/centos-7-install-mongodb-4.4.1.png)
 
-##2.3 设置Mongodb开机启动,并立即运行mongodb服务,检测其状态
+##2.3 Setup Mongodb 
+Configure Mongodb services to start automatically at boot.and immediately run the mongodb service and then check its status
+
 ```shell
-systemctl enable mongod.service #添加到开机启动 
-systemctl start mongod.service #启动mongod
-systemctl status mongod  #查看mongod运行状态
+systemctl enable mongod.service  
+systemctl start mongod.service  
+systemctl status mongod  
 
 ```
 ![](../../image/centos-7-start-mongodb-4.4.1.png)
 
-##3.1 安装JAVA JDK环境
+##3.1 Install JAVA JDK environment
 ```shell 
  yum install -y java-1.8.0-openjdk
 
@@ -62,17 +66,17 @@ systemctl status mongod  #查看mongod运行状态
 ![](../../image/centos-7-install-Java-1.8.0-openjdk-1.png)
 ![](../../image/centos-7-install-Java-1.8.0-openjdk-2.png)
 
-##3.2 检测Java安装版本信息
+##3.2 Checking the JAVA version information
 ```shell 
  java -version
 
 ```
 
 ![](../../image/centos7-java-version.png)
-##4.1 安装UniFi Controller
+##4.1 Install UniFi Controller
 
 
-准备工作：先安装好wget下载工具,xz解压工具
+Preparation: first install wget download tool, xz decompression tool
 ```shell 
 yum install xz wget
 
@@ -81,9 +85,9 @@ yum install xz wget
  
 
 
-##4.2下载unifi controller 6.5.55
+##4.2 Download Unifi controller 6.5.55 Version
 
-到 https://www.ui.com/download/unifi/ 下载最新Linux版UniFi控制器
+Go to https://www.ui.com/download/unifi/ to download the latest Linux version of UniFi controller
 https://dl.ui.com/unifi/6.5.55/unifi_sysvinit_all.deb
  
 ```shell 
@@ -92,25 +96,26 @@ https://dl.ui.com/unifi/6.5.55/unifi_sysvinit_all.deb
 ```
 ![](../../image/CentOS7-download-unifi-controller.png)
 
-##4.3解压文件并配置安装unifi controller服务
+##4.3 Unzip the file and configure and install the Unifi controller service
+
 ```shell 
 mkdir tools && mv unifi_sysvinit_all.deb tools && cd tools
 ar -xv unifi_sysvinit_all.deb &&  tar -vxf data.tar.xz
 
 cp -fr usr/lib/unifi /usr/local/
 
-cd /usr/local/unifi/bin && ln -fs /usr/bin/mongod mongod #创建链接 
+cd /usr/local/unifi/bin && ln -fs /usr/bin/mongod mongod  
 ```
 
 ![](../../image/CentOS7-extract-unifi-controller.png)
 
 
 
-##4.4编辑unifi系统服务
+##4.4 Edit Unifi Controller system service
 ```shell 
 vi /etc/systemd/system/unifi.service 
 ```
-添加以下内容到unifi.service
+Add the following to unifi.service
 
 ```shell 
 [Unit]
@@ -125,26 +130,26 @@ SuccessExitStatus=143
 [Install]
 WantedBy=multi-user.target
 ```
-说明:-Xmx1024M是限制最大内存为1G(1024M)，如果服务器内存很大配置很好删除这项目配置即可
+Note: -Xmx1024M is to limit the maximum memory to 1GB (1024MB), if the server memory is very large, it is good to delete this proerty configuration
 ![](../../image/centos-7-setup-unifi-controller.png)
 
 ![](../../image/CentOS7-unifi-service.png)
 
-##4.5. 启动Unifi Controller服务
+##4.5. Start Unifi Controller service
  ```shell 
-systemctl enable unifi.service #添加到开机启动 
+systemctl enable unifi.service  
 systemctl start unifi.service 
 systemctl status unifi 
 ```
 ![](../../image/Centos-7-install-configure-unifi-controller.png)
 
 
-如果云服务器是阿里云或腾讯云提供的,请在管理平台添加防火墙规则，把3478,8080,8443,8843,8880添加到规则内放行端口即可。
+ 
+If the cloud server is provided by Alibaba Cloud or Tencent Cloud, please add firewall rules on the management platform, and add 3478,8080,8443,8843,8880 to the allowed ports in the rules.
 
 
-
-##4.6 访问Unifi Controller服务
-在浏览器打开https://IP:8443
+##4.6  Access to Unifi Controller service
+Open https://IP:8443 in the browser
  
 
 ![](../../image/access-unifi-controller-on-centos-1.png)

@@ -471,33 +471,36 @@
     
 					<section class="normal markdown-section">
 						
-						<h1 id="ubuntu-18046-lts-安装unifi-controller">Ubuntu 18.04.6 LTS 安装Unifi Controller</h1>
-<h2 id="11-用ssh工具以root管理员身份登录到服务器">1.1 用SSH工具以root管理员身份登录到服务器</h2>
+						<h1 id="install-unifi-controller-on-ubuntu-18046-lts">Install Unifi Controller on Ubuntu 18.04.6 LTS</h1>
+<h2 id="11-use-ssh-client-tool-to-log-in-to-the-server">1.1 Use SSH client tool to log in to the server</h2>
+<p>Change the user as the root administrator</p>
+<pre><code class="lang-shell">sudo su -
+</code></pre>
 <p><img src="../../image/ubuntu-18-04-ssl-tool.png" alt=""></p>
-<h2 id="12-更新atp软件源">1.2 更新atp软件源</h2>
+<h2 id="12-update-apt-get-software-source">1.2 Update APT-get software source</h2>
 <pre><code class="lang-shell">apt-get upadte
 </code></pre>
 <p><img src="../../image/ubuntu-apt-get-update.png" alt=""></p>
-<h2 id="21-安装java-jdk8">2.1 安装Java JDK8</h2>
+<h2 id="21-install-java-jdk8">2.1 Install JAVA JDK8</h2>
 <pre><code class="lang-shell">apt-get install openjdk-8-jdk
 </code></pre>
 <p><img src="../../image/ubuntu-apt-get-install-java-jdk.png" alt=""></p>
 <p><img src="../../image/ubuntu-apt-get-install-java-jdk-2.png" alt=""></p>
-<h2 id="22-检测java安装版本信息">2.2 检测Java安装版本信息</h2>
+<h2 id="22-checking-the-java-version-information">2.2 Checking the Java version information</h2>
 <pre><code class="lang-shell"> java -version
 </code></pre>
 <p><img src="../../image/ubuntu-java-version.png" alt=""></p>
-<h2 id="31下载unifi-controller-6555">3.1下载unifi controller 6.5.55</h2>
-<p>到 <a href="https://www.ui.com/download/unifi/" target="_blank">https://www.ui.com/download/unifi/</a> 下载最新Linux版UniFi控制器</p>
+<h2 id="31-download-unifi-controller-6555">3.1 Download unifi controller 6.5.55</h2>
+<p>Go to <a href="https://www.ui.com/download/unifi/" target="_blank">https://www.ui.com/download/unifi/</a> to download the latest Linux version of UniFi controller</p>
 <pre><code class="lang-shell"> wget https://dl.ui.com/unifi/6.5.55/unifi_sysvinit_all.deb --no-check-certificate
 </code></pre>
 <p><img src="../../image/ubuntu-install-unifi-controller.png" alt=""></p>
-<h2 id="32-安装unifi-controller软件包">3.2 安装Unifi Controller软件包</h2>
+<h2 id="32-install-unifi-controller-software-package">3.2 Install Unifi Controller software package</h2>
 <pre><code class="lang-shell">
  dpkg -i unifi_sysvinit_all.deb
 </code></pre>
-<p> 由于Ubuntu系统是第一次安装Unifi controller软件服务,开始安装可能会缺少部分依赖，导致安装失败如下图;
-<img src="../../image/ubuntu-dpkg-install-unifi-controller.png" alt=""></p>
+<p> Since the Ubuntu system is the first time to install the Unifi controller software service, some dependencies may be missing at the beginning of the installation,  installation to fail as shown below:</p>
+<p><img src="../../image/ubuntu-dpkg-install-unifi-controller.png" alt=""></p>
 <pre><code class="lang-shell">dpkg: error processing package unifi (--install):
 dependency problems - leaving unconfigured
 Processing triggers for ureadahead (0.100.0-21) ...
@@ -505,27 +508,27 @@ Processing triggers for systemd (237-3ubuntu10.52) ...
 Errors were encountered while processing:
 unifi
 </code></pre>
-<h2 id="33--安装unifi-controller系统依赖软件安装包">3.3  安装Unifi Controller系统依赖软件安装包</h2>
-<p>解决以上问题需执行以下命令，将依赖补充完整，再执行一次安装</p>
+<h2 id="33-install-unifi-controller-system-dependent-software-installation-package">3.3 Install Unifi Controller system dependent software installation package</h2>
+<p>To solve the above problems, you need to execute the following command, and complete the dependency, and then execute the installation again</p>
 <pre><code class="lang-shell"> apt-get install -f
 </code></pre>
 <p><img src="../../image/ubuntu-dpkg-install-unifi-controller-depends-software.png" alt=""></p>
-<h2 id="34-启动-unifi-controller服务">3.4 启动 Unifi Controller服务</h2>
-<pre><code class="lang-shell">systemctl enable unifi.service #添加到开机启动 
+<h2 id="34-start-unifi-controller-service">3.4 Start Unifi Controller service</h2>
+<pre><code class="lang-shell">systemctl enable unifi.service 
 systemctl start unifi.service 
 systemctl status unifi
 </code></pre>
 <p><img src="../../image/ubuntu-start-unifi-controller-software.png" alt=""></p>
-<h2 id="41-云服务器防火墙规则">4.1 云服务器防火墙规则</h2>
-<p>如果云服务器是阿里云或腾讯云提供的,请在管理平台添加防火墙规则，把3478,8080,8443,8843,8880添加到规则内放行端口即可。</p>
-<h2 id="42-访问unifi-controller服务">4.2 访问Unifi Controller服务</h2>
-<p>在浏览器打开<a href="https://IP:8443" target="_blank">https://IP:8443</a></p>
+<h2 id="41-cloud-server-firewall-rules">4.1 Cloud server firewall rules</h2>
+<p>If the cloud server is provided by Alibaba Cloud or Tencent Cloud, please add firewall rules on the management platform, and add 3478,8080,8443,8843,8880 to the allowed ports in the rules.</p>
+<h2 id="42-access-to-unifi-controller-service">4.2 Access to Unifi Controller service</h2>
+<p>Open <a href="https://IP:8443" target="_blank">https://IP:8443</a> in the browser</p>
 <p><img src="../../image/access-unifi-controller-on-centos-1.png" alt="">
 <img src="../../image/access-unifi-controller-on-centos-2.png" alt="">
 <img src="../../image/access-unifi-controller-on-centos-3.png" alt="">
 <img src="../../image/access-unifi-controller-on-centos-4.png" alt=""> </p>
 <footer class="page-footer"><span class="copyright">Copyright © Cloud Hotspot cloudshotspot.com all right reserved</span><span class="footer-modification">Last update：
-2021-12-26 13:46:24
+2021-12-27 22:08:23
 </span></footer>
 						
 					</section>
@@ -568,7 +571,7 @@ systemctl status unifi
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"title":"1.2 Ubuntu 18 安装Unifi Controller","level":"1.2.2","depth":2,"next":{"title":"2.1 配置Wireless网络","level":"1.2.3","depth":2,"path":"ubiquiti-network/wireless-setup.md","ref":"ubiquiti-network/wireless-setup.md","articles":[]},"previous":{"title":"1.1 CentOS 7 安装Unifi Controller","level":"1.2.1","depth":2,"path":"ubiquiti-network/CentOS-7-install-unifi-controller.md","ref":"ubiquiti-network/CentOS-7-install-unifi-controller.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","versions-select","tbfed-pagefooter","hide-element","donate","multilingual-index","sitemap2"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Cloud Hotspot cloudshotspot.com","modify_label":"Last update：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"donate":{"title":"","button":"联系我们","wechat":"/image/qrcode-oc.jpg","alipay":"/image/qrcode-us.jpg","wechatText":"云热点公众号","alipayText":"优思网络"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","multilingual-index":{"enableSuper":false,"title":"inherit from super","index":"index.html"},"custom-favicon":{},"versions":{"options":[{"value":"/zh/","text":"简体中文"},{"value":"/en/","text":"English"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"sitemap2":{"hostname":"https://docs.cloudshotspot.com","lang":["zh","en"],"links":[{"lang":"zh","url":"https://docs.cloudshotspot.com/zh/"},{"lang":"en","url":"https://docs.cloudshotspot.com/en/"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://portal.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"zh","gitbook":"*"},"file":{"path":"ubiquiti-network/Ubuntu-install-unifi-controller.md","mtime":"2021-12-26T05:46:24.233Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-26T10:11:16.181Z"},"basePath":"..","book":{"language":"zh"}});
+			gitbook.page.hasChanged({"page":{"title":"1.2 Ubuntu 18 安装Unifi Controller","level":"1.2.2","depth":2,"next":{"title":"2.1 配置Wireless网络","level":"1.2.3","depth":2,"path":"ubiquiti-network/wireless-setup.md","ref":"ubiquiti-network/wireless-setup.md","articles":[]},"previous":{"title":"1.1 CentOS 7 安装Unifi Controller","level":"1.2.1","depth":2,"path":"ubiquiti-network/CentOS-7-install-unifi-controller.md","ref":"ubiquiti-network/CentOS-7-install-unifi-controller.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","theme-fexa-black","versions-select","tbfed-pagefooter","hide-element","donate","multilingual-index","sitemap2"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Cloud Hotspot cloudshotspot.com","modify_label":"Last update：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"theme-fexa":{"search-placeholder_cn":"输入关键字搜索","search-placeholder_en":"Type a keyword to search","logo":"image/cloud-hotspot.png","favicon":"image/favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"donate":{"title":"","button":"联系我们","wechat":"/image/qrcode-oc.jpg","alipay":"/image/qrcode-us.jpg","wechatText":"云热点公众号","alipayText":"优思网络"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"image/favicon.ico","multilingual-index":{"enableSuper":false,"title":"inherit from super","index":"index.html"},"custom-favicon":{},"versions":{"options":[{"value":"/zh/","text":"简体中文"},{"value":"/en/","text":"English"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"sitemap2":{"hostname":"https://docs.cloudshotspot.com","lang":["zh","en"],"links":[{"lang":"zh","url":"https://docs.cloudshotspot.com/zh/"},{"lang":"en","url":"https://docs.cloudshotspot.com/en/"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-fexa-black":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"nav_zh":[{"url":"https://portal.cloudshotspot.com","target":"_blank","name":"管理控制台","border":"nav-border","type":"console"}],"nav_en":[{"url":"https://console.cloudshotspot.com","target":"_blank","name":"Console","border":"nav-border","type":"console"}]}},"title":"Cloud Hotspot","language":"zh","gitbook":"*"},"file":{"path":"ubiquiti-network/Ubuntu-install-unifi-controller.md","mtime":"2021-12-27T14:08:23.684Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-27T14:19:04.576Z"},"basePath":"..","book":{"language":"zh"}});
 		});
 	</script>
 </div>

@@ -1,88 +1,95 @@
-#Unifi Controller配置Cloud Hotspot
+#Unifi Controller configure Cloud Hotspot
 
- ##管理员登录Unifi Controller控制管理界面,如下图：
+ ##Admin logins in to Unifi Controller ,Overview page：
 
  ![](../../image/Setup-unifi-controller-overview.png)
  
- 最新版本Unifi controller Network Version 6.5.54 
+The latest version Unifi controller Network Version 6.5.54
+
  
- 本文档简单简述Guest Hotspot与云热点Cloud Hotspot进行对接,实现手机号码SMS短信验证,会员账号登录，Voucher数字验证码,一键连接免费 Free Wi-Fi的功能.
+This document briefly describes the integrating between Guest Hotspot and Cloud Hotspot, which provide SMS verification of mobile phone number, member account login, Voucher digital verification code, and one-click connection to  public Free Wi-Fi. 
 
+##1 Unifi Controller set Guest Hotspot
 
-##1 Unifi Controller 设置Guest Hotspot
-
-##1.1进入设置界面
-  操作步骤: 
-  点击-->Settings 
+##1.1 Enter the setting page
+ Steps: Click -->Settings
 
  ![](../../image/Unifi-controller-settings.png)
 
-##1.2增加新的Guest Portal
- 操作步骤: 
-  点击-->Add New Guest Hotspot
+##1.2 Add a new Guest Portal
+ Steps: Click -->Add New Guest Hotspot
+
  ![](../../image/Unifi-controller-add-guest-hotspotl.png)
 
-##2.2 配置Guest Portal
+##2.2 Configure Guest Portal
 
 Enable Hotspot:
-
-
-热点状态:选择开启
+ 
+Hotspot status: select to open
 
 
  Name:
- 无线Wi-Fi名称：输入自己想要的无线网络SSID，例:Cloud Hotspot
-
+ 
+ Wireless Wi-Fi name: Enter the SSID of the wireless network you want, for example: Cloud Hotspot
 
  Authentication Type:
- 无线认证方式:选择 External Portal Server
+
+ Wireless authentication method: select External Portal Server
+ 
 
  ![](../../image/Unifi-controller-Guest-portal-setup.png)
 
  
-##2.3 设置External Portal Server
+##2.3 Setting up External Portal Server
 External Portal：
-IP地址由管理控制台提供,[请参考此文档](../cloud-hotspot/create-a-site-with-unifi-controller.md) 
+
+The IP address is provided by the management console,[please refer to this document](../cloud-hotspot/create-a-site-with-unifi-controller.md) 
 
  ![](../../image/Unifi-controller-Guest-external-portal-server.png)
 
-##2.4 设置Portal Configuration
+##2.4 Steps: Click the Advanced button -->Advanced --->Portal Configuration
 
- 操作步骤:
- 点击高级按钮-->Advanced --->Portal Configuration
+Steps: Click the Advanced button -->Advanced --->Portal Configuration
 
-Secure Portal:开启
+Secure Portal:Enable
 
 Redirect Using Hostname：
 
-由云热点Cloud Hotspot管理平台提供,[请参考此文档](../cloud-hotspot/create-a-site-with-unifi-controller.md)
 
-示列：cn-portal.cloudshotspot.com
+Provided by Cloud Hotspot management platform, [please refer to this document](../cloud-hotspot/create-a-site-with-unifi-controller.md)
+ 
+
+Example: cn-portal.cloudshotspot.com
+
+
+
+示列：us-portal.cloudshotspot.com
 
  ![](../../image/unifi-controller-portal-setup.png)
 
 
-##2.5 设置Network Isolation 
-设置网络隔离与云热点进行对接
+##2.5 Set up Network Isolation
+Set up network isolation to connect with cloud hotspots
 
 
 Allowed Authorization Access：
 
 
-此处有多个参数由管理平台提供 
+There are multiple parameters provided by the management platform,[please refer to this document](../cloud-hotspot/create-a-site-with-unifi-controller.md)
 
 ![](../../image/cloud-hotspot-unifi-controller.png)
 
-##2.6 保存并应用Apply Changes
- 操作步骤:Apply Changes
+##2.6 Save and apply Apply Changes
+Steps: Apply Changes
+
+
 
  ![](../../image/cloud-hotspot-unifi-controller-apply.png)
 
 
-##2.7 手机查看Wi-Fi
+##2.7 Check Wi-Fi on mobile phone
 
-
- ![](../../image/wifi-portal.jpg =100x20) 
-##2.8 连接Wi-Fi接入Cloud Hotspot
+ ![](../../image/wifi-portal.jpg) 
+##2.8 Connect Wi-Fi to Cloud Hotspot
 ![](../../image/wifi-portal-2.jpg) 
 ![](../../image/wifi-portal-3.jpg)
