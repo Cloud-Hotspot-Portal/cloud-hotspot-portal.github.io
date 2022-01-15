@@ -1,4 +1,4 @@
-#对接Ubiquiti Network -  Guest Portal
+#对接Ubiquiti Network - Hotspot Portal
 
 
 

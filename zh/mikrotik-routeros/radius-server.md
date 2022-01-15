@@ -1,4 +1,4 @@
-##Mikrotik RouterOS 内部用户认证
+##Mikrotik RouterOS Radius AAA授权认证
 ###设置Hotspot Profile 属性
 
 1.1 打开 Hotspot  server Profile 界面
@@ -11,19 +11,20 @@
 
 ![](../../image/Hotspot-server-profile-1.png)
 
-###设置 Hotspot用户及用户属性
+###设置 Hotspot Radius AAA授权认证
 
 
 
-1.3设置用户(修改用户名或密码)
+1.3设置使用Radius,勾选启用.注意,请把Accounting勾选去掉
 
-![](../../image/Hotspot-user.png)
+![](../../image/Hotspot-server-profile-radius.png)
 
-1.4设置Hotspot User Profile
 
-** Shared users 为空或者具体想要的数字
+1.4设置Radius服务器
 
-![](../../image/Hotspot-user-profile.png)
+
+
+![](../../image/Hotspot-radius-server.png)
 
 
 
