@@ -2,7 +2,7 @@
 *** Radius server: radius.cloudshotspot.com
 
 
-*** Secret : cloud-hotspot
+*** Secret : (Please login to check on your site)
 
 
 *** Port : 1812

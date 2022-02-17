@@ -2,7 +2,7 @@
 *** Radius server: radius.cloudshotspot.com
 
 
-*** Secret : cloud-hotspot
+*** Secret : (请登录您节点查看)
 
 
 *** Port : 1812
