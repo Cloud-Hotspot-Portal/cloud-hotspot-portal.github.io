@@ -1,6 +1,16 @@
 #View Account
 
-**Request URL：**
+Domain name:
+
+China Mainland：https://api-cn.cloudshotspot.com
+Internation.：https://api.cloudshotspot.com
+
+Endpoint:
+
+[domain]/v2/account/detail
+
+
+**Request API URL：**
 - ` https://api.cloudshotspot.com/v2/account/detail `
   
 **Request Method：**
@@ -20,18 +30,27 @@
 Success
 ``` 
 {
-  "status": true,
+  "status": 200,
   "msg": "success",
-  "user": {
-    "usercode": "18c3333c0cfa439794a3073d90892c1a",
-    "truename": "test1",
-    "email": "test2@gmail.com",
-    "start_time": "1560009600",
-    "end_time": "1591632000",
+  "data": {
+    "usercode": "33931cf477d9d86b142caaae27261683",
+    "nickname": "test3",
+    "email": "test3@qa.it",
+    "start_time": "2022-01-02",
+    "end_time": "2022-11-02",
     "status": "1",
-    "create_time": "2019-06-09 06:07:02"
+    "create_time": ""
   }
 }
 
 ```
 
+
+ Error
+```
+ {
+  "status": 400,
+  "msg": "sitekey or secretkey can not be empty",
+  "data": []
+}
+```

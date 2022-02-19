@@ -1,6 +1,16 @@
 #Delete Account
+ 
+Domain name:
 
-**Request URL：** 
+China Mainland：https://api-cn.cloudshotspot.com
+Internation.：https://api.cloudshotspot.com
+
+Endpoint:
+
+[domain]/v2/account/delete
+
+
+**Request API URL：** 
 - ` https://api.cloudshotspot.com/v2/account/delete `
   
 **Request Method:**
@@ -19,9 +29,19 @@
 
 ``` 
 {
-  "status": true,
-  "msg": "success"
+  "status": 200,
+  "msg": "success",
+  "data": []
 }
 
 ```
 
+Error
+
+``` 
+ {
+  "status": 400,
+  "msg": "sitekey or secretkey can not be empty",
+  "data": []
+}
+```

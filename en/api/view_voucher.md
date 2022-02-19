@@ -1,3 +1,14 @@
+#View Voucher
+
+Domain name:
+
+China Mainland：https://api-cn.cloudshotspot.com
+Internation.：https://api.cloudshotspot.com
+
+Endpoint:
+
+[domain]/v2/voucher/detail
+
 
 **Request URL：** 
 - ` https://api.cloudshotspot.com/v2/voucher/detail `
@@ -16,17 +27,28 @@
 
 **Returned Example**
 
+Success
 ``` 
 {
-  "status": true,
+  "status": 200,
   "msg": "success",
-  "user": {
-    "id": "8",
-    "voucher_code": "0111836338",
-    "expire_date": "2019-07-09 14:27:08",
-    "create_time": "2019-06-09 14:27:08"
+  "data": {
+    "id": "40",
+    "voucher_code": "5492811894",
+    "expire_date": "2022-12-19 15:18:51",
+    "create_time": "2022-02-19 15:57:45"
   }
 }
 
+
 ```
 
+
+ Error
+```
+ {
+  "status": 400,
+  "msg": "sitekey or secretkey can not be empty",
+  "data": []
+}
+```

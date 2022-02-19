@@ -1,4 +1,15 @@
 #Update Account
+
+Domain name:
+
+China Mainland：https://api-cn.cloudshotspot.com
+Internation.：https://api.cloudshotspot.com
+
+Endpoint:
+
+[domain]/v2/account/update
+
+
 **Request URL：**
 - ` https://api.cloudshotspot.com/v2/account/update `
   
@@ -12,7 +23,7 @@
 |sitekey |  Yes  |    string   |    Sitekey   |
 |secretkey |  Yes  |    string   |    Secretkey   |
 |usercode |  Yes  |    string   |    Usercode   |
-|truename |  Yes  |    string   |    Truename of the account  |
+|nickname |  Yes  |    string   |    nickname of the account  |
 |email |  Yes  |    string   |    Email address   |
 |username |  Yes  |    string   |    Username   |
 |password |  Yes  |    string   |    password   |
@@ -24,9 +35,20 @@
 
 ``` 
 {
-  "status": true,
-  "msg": "success"
+  "status": 200,
+  "msg": "success",
+  "data": []
 }
 
+```
+
+
+ Error
+```
+ {
+  "status": 400,
+  "msg": "sitekey or secretkey can not be empty",
+  "data": []
+}
 ```
 

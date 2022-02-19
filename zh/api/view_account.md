@@ -1,6 +1,15 @@
+** 域名：** 
+- `中国：https://api-cn.cloudshotspot.com`
+- `国际：https://api.cloudshotspot.com`
+
+
+**接口：** 
+- `[domain]/v2/account/detail `
+ 
 
 **请求URL：** 
-- ` https://api.cloudshotspot.com/v2/account/detail `
+- ` https://api-cn.cloudshotspot.com/v2/account/detail `
+  
   
 **请求方式：**
 - POST 
@@ -9,27 +18,29 @@
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|sitekey |  是  |    string   |    无   |
-|secretkey |  是  |    string   |    无   |
-|usercode |  是  |    string   |    无   |
+|sitekey |  是  |    string   |    站点Key   |
+|secretkey |  是  |    string   |    站点Secret   |
+|usercode |  是  |    string   |    用户编码   |
 
 
 **返回示例**
-Success
+
 ``` 
 {
-  "status": true,
+  "status": 200,
   "msg": "success",
-  "user": {
-    "usercode": "18c3333c0cfa439794a3073d90892c1a",
-    "truename": "test1",
-    "email": "test2@gmail.com",
-    "start_time": "1560009600",
-    "end_time": "1591632000",
+  "data": {
+    "usercode": "33931cf477d9d86b142caaae27261683",
+    "nickname": "test3",
+    "email": "test3@qa.it",
+    "start_time": "2022-01-02",
+    "end_time": "2022-11-02",
     "status": "1",
-    "create_time": "2019-06-09 06:07:02"
+    "create_time": ""
   }
 }
 
 ```
+
+
 

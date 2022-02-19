@@ -1,5 +1,17 @@
 # Delete Voucher
-**Request URL：**
+ 
+Domain name:
+
+China Mainland：https://api-cn.cloudshotspot.com
+Internation.：https://api.cloudshotspot.com
+
+Endpoint:
+
+[domain]/v2/voucher/delete
+
+
+
+**Request API URL：**
 - ` https://api.cloudshotspot.com/v2/voucher/delete `
   
 **Request Method：**
@@ -17,11 +29,21 @@
 
 **Returned Example**
 
+
 ``` 
 {
-  "status": true,
-  "msg": "success"
+  "status": 200,
+  "msg": "success",
+  "data": []
 }
 
 ```
 
+ Error
+```
+ {
+  "status": 400,
+  "msg": "sitekey or secretkey can not be empty",
+  "data": []
+}
+```

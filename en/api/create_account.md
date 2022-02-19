@@ -1,6 +1,15 @@
 #Create Account
 
-**Request URL：** 
+Domain name:
+
+China Mainland：https://api-cn.cloudshotspot.com
+Internation.：https://api.cloudshotspot.com
+
+Endpoint:
+
+[domain]/v2/account/create
+
+** Request API URL：** 
 - ` https://api.cloudshotspot.com/v2/account/create `
   
 **Request Method:**
@@ -12,7 +21,7 @@
 |:----    |:---|:----- |-----   |
 |sitekey |  Yes  |    string   |    Sitekey   |
 |secretkey |  Yes  |    string   |    Secretkey   |
-|truename |  Yes  |    string   |    Truename   |
+|nickname |  Yes  |    string   |    nickname   |
 |email |  Yes  |    string   |    Email   |
 |username |  Yes  |    string   |    Username   |
 |password |  Yes  |    string   |    Password   |
@@ -25,18 +34,11 @@
 Success
 ``` 
 {
-  "status": true,
-  "data": [
-    {
-      "usercode": "16996b4a6e09318c9317b95cff805008",
-      "truename": "test2",
-      "email": "test2@gmail.com",
-      "start_time": "1560009600",
-      "end_time": "1591632000",
-      "status": "1",
-      "create_time": "2019-06-09 05:54:32"
-    }
-  ]
+  "status": 200,
+  "msg": "success",
+  "data": {
+    "usercode": "b3ae46171a83276f397985677d4f37a3"
+  }
 }
 
 ```
@@ -44,9 +46,9 @@ Success
 Error
 
 ``` 
-{
-  "status": false,
-  "msg": "invalid sitekey or secretkey"
+ {
+  "status": 400,
+  "msg": "sitekey or secretkey can not be empty",
+  "data": []
 }
-
 ```

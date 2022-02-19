@@ -1,6 +1,15 @@
 
+** 域名：** 
+- `中国：https://api-cn.cloudshotspot.com`
+- `国际：https://api.cloudshotspot.com`
+
+
+**接口：** 
+- `[domain]/v2/account/detail `
+
+ 
 **请求URL：** 
-- ` https://api.cloudshotspot.com/v2/voucher/detail `
+- ` https://api-cn.cloudshotspot.com/v2/voucher/detail `
   
 **请求方式：**
 - POST 
@@ -9,24 +18,35 @@
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|sitekey |  是  |    string   |    无   |
-|secretkey |  是  |    string   |    无   |
-|id |  是  |    int   |    无   |
+|sitekey |  是  |    string   |    站点Key   |
+|secretkey |  是  |    string   |    站点Secret   |
+|id |  是  |    int   |    voucher_id   |
+|expire_date |  是  |     string  |    过期日期  |
 
 
 **返回示例**
-
+Success
 ``` 
 {
-  "status": true,
+  "status": 200,
   "msg": "success",
-  "user": {
-    "id": "8",
-    "voucher_code": "0111836338",
-    "expire_date": "2019-07-09 14:27:08",
-    "create_time": "2019-06-09 14:27:08"
+  "data": {
+    "id": "40",
+    "voucher_code": "5492811894",
+    "expire_date": "2022-12-19 15:18:51",
+    "create_time": "2022-02-19 15:57:45"
   }
 }
 
+
 ```
 
+
+ Error
+```
+ {
+  "status": 400,
+  "msg": "sitekey or secretkey can not be empty",
+  "data": []
+}
+```
