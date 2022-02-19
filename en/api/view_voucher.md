@@ -1,13 +1,13 @@
 #View Voucher
+ 
+** Domain name：** 
+- `China Mainland：https://api-cn.cloudshotspot.com`
+- `Internation：https://api.cloudshotspot.com` 
+ 
 
-Domain name:
+**Endpoint:** 
 
-China Mainland：https://api-cn.cloudshotspot.com
-Internation.：https://api.cloudshotspot.com
-
-Endpoint:
-
-[domain]/v2/voucher/detail
+- `[domain]/v2/voucher/detail`
 
 
 **Request URL：** 

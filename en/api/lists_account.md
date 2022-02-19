@@ -1,13 +1,14 @@
 #List Accounts
 
-Domain name:
+  
+** Domain name：** 
+- `China Mainland：https://api-cn.cloudshotspot.com`
+- `Internation：https://api.cloudshotspot.com` 
+ 
 
-China Mainland：https://api-cn.cloudshotspot.com
-Internation.：https://api.cloudshotspot.com
+**Endpoint:** 
 
-Endpoint:
-
-[domain]/v2/account/list
+- `[domain]/v2/account/list`
 
 
 

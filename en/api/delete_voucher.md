@@ -1,14 +1,15 @@
 # Delete Voucher
  
-Domain name:
+  
+  
+** Domain name：** 
+- `China Mainland：https://api-cn.cloudshotspot.com`
+- `Internation：https://api.cloudshotspot.com` 
+ 
 
-China Mainland：https://api-cn.cloudshotspot.com
-Internation.：https://api.cloudshotspot.com
+**Endpoint:** 
 
-Endpoint:
-
-[domain]/v2/voucher/delete
-
+- `[domain]/v2/voucher/delete `
 
 
 **Request API URL：**

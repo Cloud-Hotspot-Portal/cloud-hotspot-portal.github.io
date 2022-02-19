@@ -1,15 +1,13 @@
 #Update Voucher
+ 
+** Domain name：** 
+- `China Mainland：https://api-cn.cloudshotspot.com`
+- `Internation：https://api.cloudshotspot.com` 
+ 
 
-Domain name:
+**Endpoint:** 
 
-China Mainland：https://api-cn.cloudshotspot.com
-Internation.：https://api.cloudshotspot.com
-
-Endpoint:
-
-[domain]/v2/voucher/update
-
-
+- `[domain]/v2/voucher/update`
 
 **Request URL：**
 - ` https://api.cloudshotspot.com/v2/voucher/update `

@@ -1,13 +1,16 @@
 #Generate Voucher
+ 
+  
+  
+** Domain name：** 
+- `China Mainland：https://api-cn.cloudshotspot.com`
+- `Internation：https://api.cloudshotspot.com` 
+ 
 
-Domain name:
+**Endpoint:** 
 
-China Mainland：https://api-cn.cloudshotspot.com
-Internation.：https://api.cloudshotspot.com
+- `[domain]/v2/voucher/generate`
 
-Endpoint:
-
-[domain]/v2/voucher/generate
 
 
 **Request API URL：**

@@ -1,13 +1,17 @@
 #List Vouchers
 
-Domain name:
+  
+  
+** Domain name：** 
+- `China Mainland：https://api-cn.cloudshotspot.com`
+- `Internation：https://api.cloudshotspot.com` 
+ 
 
-China Mainland：https://api-cn.cloudshotspot.com
-Internation.：https://api.cloudshotspot.com
+**Endpoint:** 
 
-Endpoint:
+- `[domain]/v2/voucher/list`
 
-[domain]/v2/voucher/list
+
 
 **Request API URL：**
 - ` https://api.cloudshotspot.com/v2/voucher/list `

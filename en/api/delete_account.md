@@ -1,13 +1,14 @@
 #Delete Account
  
-Domain name:
+  
+** Domain name：** 
+- `China Mainland：https://api-cn.cloudshotspot.com`
+- `Internation：https://api.cloudshotspot.com` 
+ 
 
-China Mainland：https://api-cn.cloudshotspot.com
-Internation.：https://api.cloudshotspot.com
+**Endpoint:** 
 
-Endpoint:
-
-[domain]/v2/account/delete
+- `[domain]/v2/account/delete `
 
 
 **Request API URL：** 

@@ -1,14 +1,16 @@
 #Update Account
 
-Domain name:
+  
+** Domain name：** 
+- `China Mainland：https://api-cn.cloudshotspot.com`
+- `Internation：https://api.cloudshotspot.com` 
+ 
 
-China Mainland：https://api-cn.cloudshotspot.com
-Internation.：https://api.cloudshotspot.com
+**Endpoint:** 
 
-Endpoint:
+- `[domain]/v2/account/update`
 
-[domain]/v2/account/update
-
+ 
 
 **Request URL：**
 - ` https://api.cloudshotspot.com/v2/account/update `
